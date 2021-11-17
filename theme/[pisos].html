@@ -39,15 +39,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h1 class="titulo-catalogo-producto">{{ title }}</h1>
         <div class="cont-horizontal-texto categoria">
           <h2 class="texto-informacion">{{ texts.-7110666f }}</h2>
-          {%- assign lineaOfPisos = f_linea | resolveReference -%}<a item="main-category" href="{{ lineaOfPisos.url }}" class="main-category">{{ lineaOfPisos.data.title }}</a>
+          {%- assign lineaOfPisos = f_linea | resolveReference -%}<a href="{{ lineaOfPisos.url }}" class="main-category">{{ lineaOfPisos.data.title }}</a>
         </div>
         <div class="cont-horizontal-texto categoria">
           <h2 class="texto-informacion">{{ texts.-770e9e62 }}</h2>
-          {%- assign lineaOfPisos = f_linea | resolveReference -%}<a item="main-category" href="{{ lineaOfPisos.url }}" class="main-category">{{ lineaOfPisos.data.title }}</a>
+          {%- assign marcaOfPisos = f_marca | resolveReference -%}<a href="{{ marcaOfPisos.url }}" class="main-category">{{ marcaOfPisos.data.title }}</a>
         </div>
         <div class="cont-horizontal-texto categoria">
           <h2 class="texto-informacion">{{ texts.-3be4eef5 }}</h2>
-          {%- assign lineaOfPisos = f_linea | resolveReference -%}<a item="main-category" href="{{ lineaOfPisos.url }}" class="main-category">{{ lineaOfPisos.data.title }}</a>
+          {%- assign categoriaOfPisos = f_categoria | resolveReference -%}<a href="{{ categoriaOfPisos.url }}" class="main-category">{{ categoriaOfPisos.data.title }}</a>
         </div>
         <p>{{ f_descripcion }}</p>
         <h2 class="heading-solicitar-cotizaci-n">{{ texts.438e20d7 }}</h2>

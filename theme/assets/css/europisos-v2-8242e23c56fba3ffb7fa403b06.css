@@ -3186,6 +3186,8 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 60px;
+  margin-bottom: 120px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -3210,6 +3212,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 33.333%;
+  margin-top: -1px;
   padding: 60px 3px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3224,19 +3227,17 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-top: 1px solid #e7e7e7;
-  border-right: 1px solid #e7e7e7;
-  border-left: 1px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
 }
 
-.link-block-5 {
+.link-block-5link-block-5 {
   border-radius: 50%;
   box-shadow: 0 8px 14px -6px #adadad;
   -webkit-transition: all 350ms cubic-bezier(.215, .61, .355, 1);
   transition: all 350ms cubic-bezier(.215, .61, .355, 1);
 }
 
-.link-block-5:hover {
+.link-block-5link-block-5:hover {
   box-shadow: 0 15px 14px -6px #adadad;
   -webkit-transform: translate(0px, -2px) scale(1.03);
   -ms-transform: translate(0px, -2px) scale(1.03);
@@ -3543,6 +3544,16 @@ p {
   align-items: center;
   color: #2e2b26;
   text-align: left;
+}
+
+.slider-catalogo-pisos-copy {
+  z-index: 1000;
+  height: 450px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  color: #fff;
 }
 
 @media screen and (max-width: 991px) {
@@ -3951,6 +3962,10 @@ p {
 
   .grid-catalogo-producto {
     grid-column-gap: 16px;
+  }
+
+  .slider-catalogo-pisos-copy {
+    height: 550px;
   }
 }
 
@@ -4993,6 +5008,10 @@ p {
       "Area-7 Area-7";
     -ms-grid-rows: auto auto auto auto auto auto auto;
     grid-template-rows: auto auto auto auto auto auto auto;
+  }
+
+  .slider-catalogo-pisos-copy {
+    height: 600px;
   }
 }
 

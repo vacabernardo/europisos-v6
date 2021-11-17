@@ -2492,6 +2492,18 @@ collections:
             label: Text
             name: '-6f76fb6e'
             widget: string
+          - hint: "Original text: LINEA\_DE\_PRODUCTO, key: -18e9feb4"
+            label: Text
+            name: '-18e9feb4'
+            widget: string
+          - hint: 'Original text: Líneas de pisos de madera, key: -b5159a8'
+            label: Text
+            name: '-b5159a8'
+            widget: string
+          - hint: 'Original text: Ver productos, key: -3e91794a'
+            label: Text
+            name: '-3e91794a'
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
