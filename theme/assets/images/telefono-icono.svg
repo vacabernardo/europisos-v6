@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="268px" height="268px" viewBox="0 0 268 268" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>telefono-icono</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="telefono-icono" fill="#000000">
+            <path d="M1,60 C-6,13 36,0 40,1 C45,3 59,19 74,41 C90,63 91,72 85,78 C80,85 71,101 71,101 C71,101 69,108 74,116 C81,127 142,188 153,195 C161,200 168,198 168,198 C168,198 183,188 190,183 C197,177 206,178 228,194 C250,210 266,223 267,228 C268,233 255,274 208,267 C130,255 13,138 1,60 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
