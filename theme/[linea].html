@@ -38,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="contenedor-texto-banner-catalogo">
         <div class="titulo-categoria-pisos w-container">
           <div>{{ texts.-18e9feb4 }}</div>
-          <h1 class="heading-h1 center light">{{ title }}</h1>
+          <h1 class="heading-h1 center light"></h1>
         </div>
       </div>
       <div class="w-slider-mask">
@@ -56,19 +56,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
   <div class="section-categorias-catalogo wf-section">
-    <div class="w-dyn-list">
-      <div role="list" class="contenedor-catalogo w-dyn-items">
-        <div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
-          <a href="{{ links.525165e8 }}" class="link-block-5link-block-5 w-inline-block">
-            <div class="imagen-boton-redondo-2 catalogo-ingenieria"></div>
+    {%- assign collection = collections.pisos -%}<div class="w-dyn-list">
+      {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
+        {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
+          <a href="{{ item.url }}" class="link-block-5link-block-5 w-inline-block">
+            <div class="imagen-boton-redondo-2 catalogo-ingenieria" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></div>
           </a>
-          <h2 class="h2-small"></h2>
-          <a href="{{ links.23 }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
-        </div>
-      </div>
-      <div class="w-dyn-empty">
-        <div>{{ texts.3d503d2b }}</div>
-      </div>
+          <h2 class="h2-small">{{ item.data.title }}</h2>
+          <a href="{{ item.url }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+        </div>{%- endfor -%}
+      </div>{%- endunless -%}
+      {%- if collection.length == 0 -%}<div class="empty-state-2 w-dyn-empty">
+        <div>{{ texts.-6a49d39f }}</div>
+      </div>{%- endif -%}
     </div>
   </div>
   {%- include "partials/footer" -%}

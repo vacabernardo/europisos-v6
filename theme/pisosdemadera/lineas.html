@@ -63,16 +63,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
   <div class="section-categorias-catalogo wf-section">
-    <div class="w-dyn-list">
-      <div role="list" class="contenedor-catalogo w-dyn-items">
-        <div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
-          <h2 class="h2-small"></h2>
-          <a href="{{ links.23 }}" class="boton w-button">{{ texts.-3e91794a }}</a>
-        </div>
-      </div>
-      <div class="w-dyn-empty">
+    {%- assign collection = collections.linea -%}<div class="w-dyn-list">
+      {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
+        {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
+          <h2 class="h2-small">{{ item.data.title }}</h2>
+          <a href="{{ item.url }}" class="boton w-button">{{ texts.-3e91794a }}</a>
+        </div>{%- endfor -%}
+      </div>{%- endunless -%}
+      {%- if collection.length == 0 -%}<div class="w-dyn-empty">
         <div>{{ texts.3d503d2b }}</div>
-      </div>
+      </div>{%- endif -%}
     </div>
   </div>
   {%- include "partials/footer" -%}
