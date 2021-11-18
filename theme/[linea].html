@@ -33,29 +33,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         display: inline-block; }</style></head>
 <body>
   {%- include "partials/menu" -%}
-  <div class="banner-catalogo wf-section">
-    <div data-delay="3000" data-animation="cross" class="slider-catalogo-pisos-copy w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="1500" data-infinite="true">
-      <div class="contenedor-texto-banner-catalogo">
-        <div class="titulo-categoria-pisos w-container">
-          <div>{{ texts.-18e9feb4 }}</div>
-          <h1 class="heading-h1 center light"></h1>
-        </div>
-      </div>
-      <div class="w-slider-mask">
-        <div class="piso-banner-01 w-slide"></div>
-        <div class="piso-banner-02 w-slide"></div>
-        <div class="piso-banner-03 w-slide"></div>
-      </div>
-      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-left">
-        <div class="w-icon-slider-left"></div>
-      </div>
-      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-right">
-        <div class="w-icon-slider-right"></div>
-      </div>
-      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-nav w-round"></div>
-    </div>
-  </div>
   <div class="section-categorias-catalogo wf-section">
+    <div class="contenedor-categoria-titulo">
+      <div>{{ texts.-18e9feb4 }}</div>
+      <h1></h1>
+    </div>
     {%- assign collection = collections.pisos -%}<div class="w-dyn-list">
       {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
         {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">

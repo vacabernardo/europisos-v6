@@ -2504,6 +2504,10 @@ collections:
             label: Text
             name: '-3e91794a'
             widget: string
+          - hint: 'Original text: MARCA, key: 45bda1c'
+            label: Text
+            name: 45bda1c
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json

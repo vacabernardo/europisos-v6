@@ -33,7 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         display: inline-block; }</style></head>
 <body>
   {%- include "partials/menu" -%}
-  <div class="section-catalogo-interior wf-section">
+  <div class="section-catalogo-interior-derecha">
     <h1 class="titulo-categoria-pisos">{{ title }}</h1>
     {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
       {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
