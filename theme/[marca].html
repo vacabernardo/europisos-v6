@@ -38,19 +38,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div>{{ texts.45bda1c }}</div>
       <h1></h1>
     </div>
-    <div class="w-dyn-list">
-      <div role="list" class="contenedor-catalogo w-dyn-items">
-        <div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
-          <a href="{{ links.525165e8 }}" class="link-block-5link-block-5 w-inline-block">
+    {%- assign collection = collections.pisos -%}<div class="w-dyn-list">
+      {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
+        {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
+          <a href="{{ item.url }}" class="link-block-5link-block-5 w-inline-block">
             <div class="imagen-boton-redondo-2 catalogo-ingenieria"></div>
           </a>
-          <h2 class="h2-small"></h2>
-          <a href="{{ links.23 }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
-        </div>
-      </div>
-      <div class="empty-state-2 w-dyn-empty">
+          <h2 class="h2-small">{{ item.data.title }}</h2>
+          <a href="{{ item.url }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+        </div>{%- endfor -%}
+      </div>{%- endunless -%}
+      {%- if collection.length == 0 -%}<div class="empty-state-2 w-dyn-empty">
         <div>{{ texts.-6a49d39f }}</div>
-      </div>
+      </div>{%- endif -%}
     </div>
   </div>
   {%- include "partials/footer" -%}

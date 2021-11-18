@@ -141,8 +141,6 @@ collections:
         name: date
         widget: datetime
       - *ref_0
-    editor:
-      preview: false
   - name: pisos
     label: Pisos
     folder: cms/pisos
@@ -249,8 +247,6 @@ collections:
         name: date
         widget: datetime
       - *ref_0
-    editor:
-      preview: false
   - name: marca
     label: Marcas
     folder: cms/marca
@@ -291,8 +287,6 @@ collections:
         name: date
         widget: datetime
       - *ref_0
-    editor:
-      preview: false
   - name: linea
     label: Lineas
     folder: cms/linea
@@ -333,8 +327,6 @@ collections:
         name: date
         widget: datetime
       - *ref_0
-    editor:
-      preview: false
   - label: Theme Settings
     name: settings
     identifier_field: title
