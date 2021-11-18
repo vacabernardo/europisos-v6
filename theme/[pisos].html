@@ -27,6 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WXKJKD4');</script>
   <!--  End Google Tag Manager  -->
+  <script type="text/javascript" src="/assets/external/sharethis.js" async="async"></script>
 {{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<style>picture { border: 0;
         max-width: 100%;
         vertical-align: middle;
@@ -37,21 +38,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="w-layout-grid grid-catalogo-producto">
       <div id="w-node-_70786581-a769-fe2c-77a7-e8e41c16a564-e2114c95" class="div-block-20">
         <h1 class="titulo-catalogo-producto">{{ title }}</h1>
-        <p>{{ f_descripcion }}</p>
+        <p class="paragraph">{{ f_descripcion }}</p>
         <div class="div-block-22"></div>
-        <div class="cont-horizontal-texto categoria">
-          <h2 class="texto-informacion">{{ texts.-7110666f }}</h2>
-          {%- assign lineaOfPisos = f_linea | resolveReference -%}<a href="{{ lineaOfPisos.url }}" class="main-category">{{ lineaOfPisos.data.title }}</a>
+        <div class="conte-info-compartir">
+          <div class="cont-info-piso">
+            <div class="cont-horizontal-texto categoria">
+              <h2 class="texto-informacion">{{ texts.-7110666f }}</h2>
+              {%- assign lineaOfPisos = f_linea | resolveReference -%}<a href="{{ lineaOfPisos.url }}" class="main-category">{{ lineaOfPisos.data.title }}</a>
+            </div>
+            <div class="cont-horizontal-texto categoria">
+              <h2 class="texto-informacion">{{ texts.-770e9e62 }}</h2>
+              {%- assign marcaOfPisos = f_marca | resolveReference -%}<a href="{{ marcaOfPisos.url }}" class="main-category">{{ marcaOfPisos.data.title }}</a>
+            </div>
+            <div class="cont-horizontal-texto categoria">
+              <h2 class="texto-informacion">{{ texts.-3be4eef5 }}</h2>
+              {%- assign categoriaOfPisos = f_categoria | resolveReference -%}<a href="{{ categoriaOfPisos.url }}" class="main-category">{{ categoriaOfPisos.data.title }}</a>
+            </div>
+          </div>
+          <div class="social-compartir">
+            <div>{{ texts.-4131881a }}</div>
+            <div class="compartir-html w-embed">
+              <!--  ShareThis BEGIN  -->
+              <div class="sharethis-inline-share-buttons"></div><!--  ShareThis END  -->
+            </div>
+          </div>
         </div>
-        <div class="cont-horizontal-texto categoria">
-          <h2 class="texto-informacion">{{ texts.-770e9e62 }}</h2>
-          {%- assign marcaOfPisos = f_marca | resolveReference -%}<a href="{{ marcaOfPisos.url }}" class="main-category">{{ marcaOfPisos.data.title }}</a>
-        </div>
-        <div class="cont-horizontal-texto categoria">
-          <h2 class="texto-informacion">{{ texts.-3be4eef5 }}</h2>
-          {%- assign categoriaOfPisos = f_categoria | resolveReference -%}<a href="{{ categoriaOfPisos.url }}" class="main-category">{{ categoriaOfPisos.data.title }}</a>
-        </div>
-        <h2 class="heading-solicitar-cotizaci-n">{{ texts.438e20d7 }}</h2>
+        <h2 class="heading-solicitar-cotizaci-n">{{ texts.1cd7f23b }}</h2>
         <div class="formulario-piso w-form">
           <form id="wf-form-Formulario" name="wf-form-Formulario" data-name="ulario" action="https://formbucket.com/f/buk_uRnr7tu3J7L3wtpeDRC9Ocy6" method="post" class="form-asesoria" data-ajax="true">
             <div id="w-node-_70786581-a769-fe2c-77a7-e8e41c16a577-e2114c95"><label for="Nombre-2" class="field-label-2">{{ texts.-1e41be8f }}</label><input type="text" class="text-field-2 w-input" maxlength="256" name="Nombre-2" data-name="Nombre 2" placeholder="" id="Nombre-2" required=""></div>
