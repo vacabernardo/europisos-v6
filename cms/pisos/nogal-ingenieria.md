@@ -1,0 +1,21 @@
+---
+title: Nogal ingenieria
+created-on: 2021-10-11T16:41:34.973Z
+updated-on: 2021-10-11T16:41:34.992Z
+published-on: 2021-10-11T16:41:35.021Z
+f_categoria: cms/categoria/piso-de-madera.md
+f_foto-principal-de-producto:
+  url: /assets/images/piso-de-madera-de-ingieneria-nogal.jpg
+f_descripcion: Los pisos de madera de ingeniería se caracterizan por su
+  durabilidad, solidez y belleza. Por su composición de varias capas son de
+  fácil instalación y ofrecen un acabado fino. Disponibles en varios colores.
+f_marca: cms/marca/tekno-step.md
+f_linea: cms/linea/línea-bau.md
+tags: pisos
+layout: "[pisos].html"
+date: 2021-10-11T16:41:35.053Z
+seo:
+  noindex: false
+  twitter:title: summary
+  twitter:card: summary
+---
