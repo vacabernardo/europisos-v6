@@ -42,7 +42,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
         {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
           <a href="{{ item.url }}" class="link-block-5link-block-5 w-inline-block">
-            <div class="imagen-boton-redondo-2 catalogo-ingenieria"></div>
+            <div class="imagen-boton-redondo-2 catalogo-ingenieria" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></div>
           </a>
           <h2 class="h2-small">{{ item.data.title }}</h2>
           <a href="{{ item.url }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
