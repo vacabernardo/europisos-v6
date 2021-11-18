@@ -5,7 +5,7 @@ updated-on: 2021-10-08T17:17:08.123Z
 published-on: 2021-10-08T17:17:08.190Z
 f_categoria: cms/categoria/pisos-vinilicos.md
 f_foto-principal-de-producto:
-  url: /assets/images/paris.png
+  url: /assets/images/paris.jpg
 f_descripcion: "Los pisos vinílicos y de linóleum ofrecen belleza, durabilidad y
   amplia gama de colores y texturas. Son de mantenimiento sencillo y resistentes
   al agua. Ideal para espacios de interior. "

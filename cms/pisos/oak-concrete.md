@@ -5,7 +5,7 @@ updated-on: 2021-10-07T17:20:19.318Z
 published-on: 2021-10-07T17:20:19.342Z
 f_categoria: cms/categoria/pisos-laminados.md
 f_foto-principal-de-producto:
-  url: /assets/images/oak-concrete.png
+  url: /assets/images/oak-concrete.jpg
 f_descripcion: Los pisos laminados son ideales para espacios de interior como
   recamaras, salas, comedores y estancias de recreación. Ofrecen durabilidad,
   belleza y son de fácil limpieza.
