@@ -65,7 +65,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
   <div class="section-categorias-catalogo wf-section">
-    {%- assign collection = collections.categoria -%}<div class="w-dyn-list">
+    {%- assign collection = collections.categoria | filter: "f_deck,ne,true", "ALL", page.inputPath -%}<div class="w-dyn-list">
+      {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
+        {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
+          <a href="{{ item.url }}" class="link-block-5link-block-5 w-inline-block">
+            <div class="imagen-boton-redondo-2" style="background-image: url('{{item.data.f_imagen.url}}');"></div>
+          </a>
+          <h2 class="h2-small">{{ item.data.title }}</h2>
+          <p class="paragraph dark small center">{{ item.data.f_descripcion }}</p>
+          <a href="{{ item.url }}" class="boton hide w-button">{{ texts.-72aeb621 }}</a>
+          <a href="{{ item.url }}" class="boton w-button">{{ texts.-50fd480d }}</a>
+        </div>{%- endfor -%}
+      </div>{%- endunless -%}
+      {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+        <div>{{ texts.3d503d2b }}</div>
+      </div>{%- endif -%}
+    </div>
+  </div>
+  <div class="section-categorias-catalogo wf-section">
+    <div>
+      <div class="container-2 w-container">
+        <h1 class="heading-2 center">{{ texts.-2f1d9aab }}</h1>
+        <p class="paragraph dark big center">{{ texts.6531414e }}</p>
+      </div>
+    </div>
+    {%- assign collection = collections.categoria | filter: "f_deck,ne,true", "ALL", page.inputPath -%}<div class="w-dyn-list">
       {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
         {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
           <a href="{{ item.url }}" class="link-block-5link-block-5 w-inline-block">

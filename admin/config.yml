@@ -129,6 +129,11 @@ collections:
         label: Descripción
         widget: text
         required: false
+      - hint: ''
+        name: f_deck
+        label: ¿Deck?
+        widget: boolean
+        required: false
       - label: Tags
         widget: hidden
         name: tags
@@ -141,6 +146,8 @@ collections:
         name: date
         widget: datetime
       - *ref_0
+    editor:
+      preview: false
   - name: pisos
     label: Pisos
     folder: cms/pisos
@@ -247,6 +254,8 @@ collections:
         name: date
         widget: datetime
       - *ref_0
+    editor:
+      preview: false
   - name: marca
     label: Marcas
     folder: cms/marca
@@ -287,6 +296,8 @@ collections:
         name: date
         widget: datetime
       - *ref_0
+    editor:
+      preview: false
   - name: linea
     label: Lineas
     folder: cms/linea
@@ -327,6 +338,8 @@ collections:
         name: date
         widget: datetime
       - *ref_0
+    editor:
+      preview: false
   - label: Theme Settings
     name: settings
     identifier_field: title
@@ -2557,6 +2570,16 @@ collections:
           - hint: 'Original text: Ver productos, key: -3e91794a'
             label: Text
             name: '-3e91794a'
+            widget: string
+          - hint: 'Original text: Catálogo de decks, key: -2f1d9aab'
+            label: Text
+            name: '-2f1d9aab'
+            widget: string
+          - hint: >-
+              Original text: ¿buscas un deck o piso para exterior? Conoce
+              nuestro portafolio de decks, key: 6531414e
+            label: Text
+            name: 6531414e
             widget: string
       - label: Links
         name: links
