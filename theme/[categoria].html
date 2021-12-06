@@ -68,7 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
           </div>
           <div data-w-tab="Tab 2" class="w-tab-pane">
-            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT; f_precio,eq,Básico", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
                   <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
@@ -82,7 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
           </div>
           <div data-w-tab="Tab 3" class="w-tab-pane">
-            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT; f_precio,eq,Estandar", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
                   <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
@@ -96,7 +96,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
           </div>
           <div data-w-tab="Tab 4" class="w-tab-pane">
-            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT; f_precio,eq,Premium", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
                   <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>

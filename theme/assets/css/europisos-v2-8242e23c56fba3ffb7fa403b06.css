@@ -3940,6 +3940,8 @@ p {
 .container-div {
   width: 100%;
   max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
