@@ -71,6 +71,11 @@ module.exports = function compareItemByFilter(item, filter) {
     if (fieldPath == "slug" && value.startsWith("cms/")) {
         value = value.split('/')
         value = value[value.length-1].replace('.md', '');
+        value = value.replace(";", "")
+    }
+
+    if (value.toString().includes('.md')) {
+        value = value.substring(0, value.indexOf('.md') + 3);
     }
 
 

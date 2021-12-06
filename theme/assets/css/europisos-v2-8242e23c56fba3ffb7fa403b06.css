@@ -209,7 +209,7 @@ p {
 .paragraph.dark.big.center {
   margin-bottom: 15px;
   color: #2e2b26;
-  line-height: 33px;
+  line-height: 1.5;
   font-weight: 400;
   text-align: center;
 }
@@ -241,7 +241,6 @@ p {
 
 .paragraph.dark.medium.center {
   color: #2e2b26;
-  line-height: 27px;
   font-weight: 400;
   text-align: center;
 }
@@ -452,9 +451,8 @@ p {
 }
 
 .imagen-boton-redondo {
-  width: 150px;
+  width: 100%;
   height: 150px;
-  border-radius: 100%;
   background-image: var(--image-i5547a96b);
   background-position: 50% 50%;
   background-size: cover;
@@ -721,7 +719,7 @@ p {
 }
 
 .link-block {
-  border-radius: 50%;
+  width: 100%;
   box-shadow: 0 8px 14px -6px #adadad;
   -webkit-transition: all 250ms cubic-bezier(.25, .46, .45, .94);
   transition: all 250ms cubic-bezier(.25, .46, .45, .94);
@@ -732,10 +730,6 @@ p {
   -webkit-transform: translate(0px, -1px) scale(1.05);
   -ms-transform: translate(0px, -1px) scale(1.05);
   transform: translate(0px, -1px) scale(1.05);
-}
-
-.link-block.cuadrado {
-  border-radius: 10%;
 }
 
 .div-50 {
@@ -912,16 +906,12 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 33.3%;
-  padding: 30px 3px 50px;
+  padding: 3px 3px 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -1105,27 +1095,27 @@ p {
 }
 
 .imagen-boton-cuadrado-pino {
-  width: 150px;
+  width: 100%;
   height: 150px;
   background-image: var(--image-39af67b9);
   background-position: 0px 0px;
-  background-size: 300px;
+  background-size: cover;
 }
 
 .imagen-boton-cuadrado-parota {
-  width: 150px;
+  width: 100%;
   height: 150px;
   background-image: var(--image-i274eeb05);
   background-position: 0px 0px;
-  background-size: 300px;
+  background-size: cover;
 }
 
 .imagen-boton-cuadrado-tornillo {
-  width: 150px;
+  width: 100%;
   height: 150px;
   background-image: var(--image-i2ce83181);
   background-position: 0px 0px;
-  background-size: 300px;
+  background-size: cover;
 }
 
 .section-fibra-de-vidrio {
@@ -1170,7 +1160,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 25%;
-  padding: 30px 3px 50px;
+  padding: 3px 3px 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1190,7 +1180,7 @@ p {
 }
 
 .imagen-boton-cuadrado-ixtle {
-  width: 150px;
+  width: 100%;
   height: 150px;
   background-image: var(--image-i68a9cb8);
   background-position: 50% 50%;
@@ -1198,7 +1188,7 @@ p {
 }
 
 .imagen-boton-cuadrado-policarbonato {
-  width: 150px;
+  width: 100%;
   height: 150px;
   background-image: var(--image-i3870c903);
   background-position: 50% 50%;
@@ -1206,7 +1196,7 @@ p {
 }
 
 .imagen-boton-cuadrado-vidrio {
-  width: 150px;
+  width: 100%;
   height: 150px;
   background-image: var(--image-i606e908b);
   background-position: 50% 50%;
@@ -1214,7 +1204,7 @@ p {
 }
 
 .imagen-boton-cuadrado-lona {
-  width: 150px;
+  width: 100%;
   height: 150px;
   background-image: var(--image-6018baf4);
   background-position: 50% 50%;
@@ -2120,6 +2110,10 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
+  transition: opacity 300ms ease, -webkit-transform 300ms ease;
+  transition: transform 300ms ease, opacity 300ms ease;
+  transition: transform 300ms ease, opacity 300ms ease, -webkit-transform 300ms ease;
   color: #2e2b26;
   text-align: left;
 }
@@ -2153,7 +2147,7 @@ p {
 }
 
 .imagen-boton-cuadrado-encapsulados {
-  width: 150px;
+  width: 100%;
   height: 150px;
   background-image: var(--image-220981a1);
   background-position: 50% 50%;
@@ -3119,7 +3113,7 @@ p {
   display: flex;
   width: 32%;
   margin: -1px 5px 10px;
-  padding: 60px 3px;
+  padding: 3px 3px 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3138,7 +3132,7 @@ p {
 }
 
 .link-block-5link-block-5 {
-  border-radius: 50%;
+  width: 100%;
   box-shadow: 0 8px 14px -6px #adadad;
   -webkit-transition: all 350ms cubic-bezier(.215, .61, .355, 1);
   transition: all 350ms cubic-bezier(.215, .61, .355, 1);
@@ -3152,11 +3146,9 @@ p {
 }
 
 .imagen-boton-redondo-2 {
-  width: 160px;
+  width: 100%;
   height: 160px;
-  border-radius: 100%;
   background-image: var(--image-i5547a96b);
-  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -3701,7 +3693,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 3px;
+  padding: 3px 3px 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3899,6 +3891,26 @@ p {
   margin-bottom: 10px;
 }
 
+.lightbox-link-deck {
+  width: 100%;
+}
+
+.lightbox-galeria {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
+  transition: opacity 300ms ease, -webkit-transform 300ms ease;
+  transition: transform 300ms ease, opacity 300ms ease;
+  transition: transform 300ms ease, opacity 300ms ease, -webkit-transform 300ms ease;
+}
+
+.lightbox-galeria:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 36px;
@@ -4025,37 +4037,30 @@ p {
   }
 
   .imagen-boton-cuadrado-pino {
-    width: 120px;
     height: 120px;
   }
 
   .imagen-boton-cuadrado-parota {
-    width: 120px;
     height: 120px;
   }
 
   .imagen-boton-cuadrado-tornillo {
-    width: 120px;
     height: 120px;
   }
 
   .imagen-boton-cuadrado-ixtle {
-    width: 120px;
     height: 120px;
   }
 
   .imagen-boton-cuadrado-policarbonato {
-    width: 120px;
     height: 120px;
   }
 
   .imagen-boton-cuadrado-vidrio {
-    width: 120px;
     height: 120px;
   }
 
   .imagen-boton-cuadrado-lona {
-    width: 120px;
     height: 120px;
   }
 
@@ -4145,7 +4150,6 @@ p {
   }
 
   .imagen-boton-cuadrado-encapsulados {
-    width: 120px;
     height: 120px;
   }
 
@@ -4513,7 +4517,6 @@ p {
   }
 
   .imagen-boton-cuadrado-pino {
-    width: 250px;
     height: 250px;
   }
 
@@ -4536,7 +4539,6 @@ p {
   }
 
   .imagen-boton-cuadrado-ixtle {
-    width: 250px;
     height: 250px;
   }
 
@@ -5075,7 +5077,6 @@ p {
   }
 
   .imagen-boton-cuadrado-pino {
-    width: 200px;
     height: 200px;
   }
 
@@ -5090,7 +5091,6 @@ p {
   }
 
   .imagen-boton-cuadrado-ixtle {
-    width: 200px;
     height: 200px;
   }
 

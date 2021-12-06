@@ -34,7 +34,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WXKJKD4');</script>
   <!--  End Google Tag Manager  -->
-  <script type="text/javascript" src="/assets/external/sharethis.js" async="async"></script>
   <meta name="keywords" content="pisos de madera">
 {{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<style>picture { border: 0;
         max-width: 100%;
@@ -70,7 +69,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
         {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
           <a href="{{ item.url }}" class="link-block-5link-block-5 w-inline-block">
-            <div class="imagen-boton-redondo-2 catalogo-ingenieria" style="background-image: url('{{item.data.f_imagen.url}}');"></div>
+            <div class="imagen-boton-redondo-2" style="background-image: url('{{item.data.f_imagen.url}}');"></div>
           </a>
           <h2 class="h2-small">{{ item.data.title }}</h2>
           <p class="paragraph dark small center">{{ item.data.f_descripcion }}</p>

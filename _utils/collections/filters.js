@@ -39,6 +39,10 @@ module.exports = {
         inputPath = inputPath.replace('./', '');
         const currentItem = array.find( i => i.inputPath && i.inputPath == "./" + inputPath)
         
+        if (fields.includes('DYN_CONTEXT_FIELD') && !fields.includes(";")) {
+            fields+="; "
+        }
+
         const filters = fields.replace(/DYN_CONTEXT_FIELD:(.*?);/gm, function(value, match) {
             if (currentItem && currentItem.data && currentItem.data[match]) {
                 return currentItem.data[match] + ";"

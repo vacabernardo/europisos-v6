@@ -417,6 +417,10 @@ collections:
             name: title
             widget: hidden
             default: Texts
+          - hint: 'Original text: Ir al inicio, key: 5fce79e3'
+            label: Text
+            name: 5fce79e3
+            widget: string
           - hint: 'Original text: Pérgolas, key: 6451f65d'
             label: Text
             name: 6451f65d
@@ -461,10 +465,6 @@ collections:
             label: Text
             name: '-1dca6e3f'
             widget: string
-          - hint: 'Original text: Saunas, key: -6cd00407'
-            label: Text
-            name: '-6cd00407'
-            widget: string
           - hint: 'Original text: Carpintería, key: 75617034'
             label: Text
             name: '75617034'
@@ -482,26 +482,25 @@ collections:
             name: '-70c0b1fd'
             widget: string
           - hint: >-
-              Original text: Pérgolas, Decks, Pisos de madera, Fibra de Vidrio,
-              Saunas y Carpintería residencial, key: 5f16505b
+              Original text: Diseño de pérgolas, decks, pisos de madera, fibra
+              de vidrio, carpintería residencial y muros verdes, key: -6cdc9155
             label: Text
-            name: 5f16505b
-            widget: string
-          - hint: >-
-              Original text: Somos una empresa mexicana dedicada a la
-              importación, instalación y fabricación de pisos de madera, decks
-              para exteriores, pérgolas, fibra de vidrio y proyectos en
-              carpintería residencial, key: 1b163aab
-            label: Text
-            name: 1b163aab
+            name: '-6cdc9155'
             widget: text
-          - hint: 'Original text: Productos y servicios >, key: 3fd8b3a7'
+          - hint: >-
+              Original text: Europisos es una empresa mexicana especializada en
+              diseño de espacios residenciales y comerciales fabricando e
+              importando las más prestigiosas marcas para pérgolas, decks, pisos
+              de madera y otros elementos de decoración y arquitectónicos, key:
+              -6df279ca
             label: Text
-            name: 3fd8b3a7
-            widget: string
-          - hint: 'Original text: Ofrecemos un servicio profesional, key: 7ee45fce'
+            name: '-6df279ca'
+            widget: text
+          - hint: >-
+              Original text: Servicio profesional con más de 25 años de
+              experiencia, key: 730179a5
             label: Text
-            name: 7ee45fce
+            name: 730179a5
             widget: string
           - hint: 'Original text: Nos respaldan más de , key: 6a03baa6'
             label: Text
@@ -514,17 +513,25 @@ collections:
           - hint: >-
               Original text:  en el diseño e instalación de carpintería fina
               para proyectos arquitectónicos residenciales y comerciales en
-              Guadalajara, Zapopan y otras ciudades de México., key: -7679c771
+              México., key: 23683f06
             label: Text
-            name: '-7679c771'
+            name: 23683f06
             widget: text
+          - hint: 'Original text: Pérgolas de madera, key: -6606db80'
+            label: Text
+            name: '-6606db80'
+            widget: string
           - hint: 'Original text: Diseño e instalación de pergolados, key: -76f6fe88'
             label: Text
             name: '-76f6fe88'
             widget: string
-          - hint: 'Original text: Conocer más>, key: -5cb370a4'
+          - hint: 'Original text: Conocer más, key: -3489eade'
             label: Text
-            name: '-5cb370a4'
+            name: '-3489eade'
+            widget: string
+          - hint: 'Original text: Decks de madera y sintético, key: -49342ec'
+            label: Text
+            name: '-49342ec'
             widget: string
           - hint: >-
               Original text: Diseño e instalación de Decks de madera y
@@ -544,11 +551,9 @@ collections:
             label: Text
             name: 5ed87009
             widget: string
-          - hint: >-
-              Original text: Diseño e instalación de saunas de madera, key:
-              22dfcce6
+          - hint: 'Original text: Carpintería fina, key: 38b37622'
             label: Text
-            name: 22dfcce6
+            name: 38b37622
             widget: string
           - hint: 'Original text: Mobiliario y carpintería, key: -693990d6'
             label: Text
@@ -570,13 +575,13 @@ collections:
             label: Text
             name: 17f057b6
             widget: text
-          - hint: 'Original text: División fibra de vidrio >, key: 6cb7c3b'
+          - hint: 'Original text: División fibra de vidrio, key: -276b24a3'
             label: Text
-            name: 6cb7c3b
+            name: '-276b24a3'
             widget: string
-          - hint: 'Original text: Vigas de Ingeniería, key: -27b7291c'
+          - hint: 'Original text: Pérgolados de diferentes materiales, key: -35484607'
             label: Text
-            name: '-27b7291c'
+            name: '-35484607'
             widget: string
           - hint: >-
               Original text: Te ofrecemos la más alta tecnología según las
@@ -584,17 +589,20 @@ collections:
             label: Text
             name: '-79b28347'
             widget: string
-          - hint: 'Original text: Conocer más >, key: -39baa740'
+          - hint: 'Original text: División de pérgolas, key: dab5225'
             label: Text
-            name: '-39baa740'
+            name: dab5225
             widget: string
           - hint: 'Original text: Responsabilidad ambiental, key: -142cecd7'
             label: Text
             name: '-142cecd7'
             widget: string
-          - hint: "Original text: Europisos ofrece productos sostenibles mediante la adquisición de materias primas de los bosques ecológicamente bien manejados y proveedores responsables. Nuestros productos se han instalado en varios edificios comerciales y casas residenciales de lujo en\_el Estado de Jalisco y algunas ciudades de la república, key: -48fd5b2"
+          - hint: >-
+              Original text: Europisos ofrece productos sostenibles mediante la
+              adquisición de materias primas de los bosques ecológicamente bien
+              manejados y proveedores responsables. , key: -76e0009f
             label: Text
-            name: '-48fd5b2'
+            name: '-76e0009f'
             widget: text
           - hint: 'Original text: Amplia variedad de materiales, key: -42635e28'
             label: Text
@@ -615,9 +623,9 @@ collections:
             label: Text
             name: '-112ecbdb'
             widget: text
-          - hint: 'Original text: Conócelo >, key: -3f1df4ac'
+          - hint: 'Original text: División de decks, key: -2df0ddfe'
             label: Text
-            name: '-3f1df4ac'
+            name: '-2df0ddfe'
             widget: string
           - hint: 'Original text: Muros verdes con follaje sintético, key: -48d59d5c'
             label: Text
@@ -630,9 +638,9 @@ collections:
             label: Text
             name: '-1553c5fd'
             widget: text
-          - hint: 'Original text: Más información >, key: 7a5d3316'
+          - hint: 'Original text: Divisón muros verdes, key: -742411d5'
             label: Text
-            name: 7a5d3316
+            name: '-742411d5'
             widget: string
           - hint: "Original text: \"Nos respaldan más de\_25, key: 70368987"
             label: Text
@@ -642,9 +650,9 @@ collections:
             label: Text
             name: '-132f9e7e'
             widget: string
-          - hint: 'Original text: SERVICIOS, key: -657ae5c3'
+          - hint: 'Original text: Mapa de sitio, key: -6beb6ac0'
             label: Text
-            name: '-657ae5c3'
+            name: '-6beb6ac0'
             widget: string
           - hint: 'Original text: Carpintería residencial, key: 68fb3ac9'
             label: Text
@@ -653,10 +661,6 @@ collections:
           - hint: 'Original text: Portafolio, key: -797026b7'
             label: Text
             name: '-797026b7'
-            widget: string
-          - hint: 'Original text: Marcas, key: -770e9e29'
-            label: Text
-            name: '-770e9e29'
             widget: string
           - hint: 'Original text: Teléfonos:, key: 5401f5bf'
             label: Text
@@ -677,15 +681,11 @@ collections:
             name: 78bcd6e2
             widget: string
           - hint: >-
-              Original text: Av. México 2517, Vallarta Nte, CP: 44690, key:
-              1025b521
+              Original text: Plaza Terranova: Av. Manuel Acuña 2929 Local E-2,
+              Terranova, 44689 Guadalajara, Jalisco, México., key: -ed7a307
             label: Text
-            name: 1025b521
-            widget: string
-          - hint: 'Original text: Guadalajara, Jalisco, México., key: 2c90fff5'
-            label: Text
-            name: 2c90fff5
-            widget: string
+            name: '-ed7a307'
+            widget: text
           - hint: 'Original text: Ver mapa en Google >, key: -6e2fc850'
             label: Text
             name: '-6e2fc850'
@@ -694,9 +694,9 @@ collections:
             label: Text
             name: '-50284710'
             widget: string
-          - hint: 'Original text: www.europisosdemaderaydecks.com, key: -59b3b63d'
+          - hint: 'Original text: Diseño y desarrollo web, key: -2df564eb'
             label: Text
-            name: '-59b3b63d'
+            name: '-2df564eb'
             widget: string
           - hint: 'Original text: Página no encontrada, key: -164505f4'
             label: Text
@@ -779,6 +779,10 @@ collections:
             label: Text
             name: 16abf1cd
             widget: text
+          - hint: 'Original text: Conocer más>, key: -5cb370a4'
+            label: Text
+            name: '-5cb370a4'
+            widget: string
           - hint: 'Original text: Pérgolas y vigas de fibra de vidrio, key: -24cedc67'
             label: Text
             name: '-24cedc67'
@@ -788,6 +792,10 @@ collections:
               -4ee4f0e7
             label: Text
             name: '-4ee4f0e7'
+            widget: string
+          - hint: 'Original text: Conocer más >, key: -39baa740'
+            label: Text
+            name: '-39baa740'
             widget: string
           - hint: >-
               Original text: Piezas de decoración en fibra de vidrio, key:
@@ -986,12 +994,6 @@ collections:
             name: 464bfa1b
             widget: text
           - hint: >-
-              Original text: Av. México 2517, Vallarta Nte, CP:44690
-              Guadalajara, Jalisco, México., key: -13a50712
-            label: Text
-            name: '-13a50712'
-            widget: string
-          - hint: >-
               Original text: Solicita una asesoría y cotización para tu
               siguiente proyecto en fibra de vidrio., key: -6a311f37
             label: Text
@@ -1002,17 +1004,18 @@ collections:
             name: 66f0678c
             widget: string
           - hint: >-
-              Original text: Decks de madera, Bambú y Eco Deck sintético de PVC
-              y resinas, key: -1a859bba
+              Original text: Decks de madera, Deck sintético y Deck de Bambú,
+              key: 1bddac4f
             label: Text
-            name: '-1a859bba'
+            name: 1bddac4f
             widget: string
           - hint: >-
               Original text: Los pisos de Deck son una opción muy útil para
-              modernizar y embellecer tus áreas externas de casa o negocio ya
-              sean jardines, terrazas y albercas., key: cffd36f
+              modernizar y embellecer las áreas de exterior para tu casa o
+              negocio ya sean jardines, terrazas y zonas de alberca, key:
+              -6ea857b5
             label: Text
-            name: cffd36f
+            name: '-6ea857b5'
             widget: text
           - hint: >-
               Original text: El deck es un piso de exterior de alta durabilidad,
@@ -1038,25 +1041,45 @@ collections:
             label: Text
             name: '-603fa34e'
             widget: text
-          - hint: 'Original text: Galería de proyectos, key: 2191c5fc'
+          - hint: 'Original text: Galería de proyectos de decks, key: 458baa2f'
             label: Text
-            name: 2191c5fc
+            name: 458baa2f
             widget: string
           - hint: 'Original text: Galería de deck para piscina, key: 28e8caf8'
             label: Text
             name: 28e8caf8
             widget: string
+          - hint: 'Original text: Decks de madera, key: 1d7e72ad'
+            label: Text
+            name: 1d7e72ad
+            widget: string
           - hint: 'Original text: Deck de Madera, key: -1ca88bf4'
             label: Text
             name: '-1ca88bf4'
+            widget: string
+          - hint: 'Original text: Más información, key: 1b4c8cf8'
+            label: Text
+            name: 1b4c8cf8
+            widget: string
+          - hint: 'Original text: Decks de bambú, key: 4269339d'
+            label: Text
+            name: 4269339d
             widget: string
           - hint: 'Original text: Deck de Bambú, key: 48cb0a5e'
             label: Text
             name: 48cb0a5e
             widget: string
+          - hint: 'Original text: Decks sintéticos, key: 358cb25b'
+            label: Text
+            name: 358cb25b
+            widget: string
           - hint: 'Original text: Deck sintético, key: -64ea79a9'
             label: Text
             name: '-64ea79a9'
+            widget: string
+          - hint: 'Original text: Deck de madera, key: 19f287ec'
+            label: Text
+            name: 19f287ec
             widget: string
           - hint: >-
               Original text: Los decks de madera son de alta durabilidad y lucen
@@ -1066,15 +1089,19 @@ collections:
             label: Text
             name: '-41b86dd1'
             widget: text
+          - hint: 'Original text: Tipos de madera para deck, key: 593a958b'
+            label: Text
+            name: 593a958b
+            widget: string
           - hint: >-
               Original text: Elige el tipo de madera que quieras de acuerdo a tu
               gusto y tipo de proyecto., key: -3675d188
             label: Text
             name: '-3675d188'
             widget: string
-          - hint: 'Original text: Madera de Teka, key: 59f589ea'
+          - hint: 'Original text: Madera de Teka para deck, key: -5e2739cd'
             label: Text
-            name: 59f589ea
+            name: '-5e2739cd'
             widget: string
           - hint: >-
               Original text: La teka es un tipo de madera muy durable al tiempo,
@@ -1084,9 +1111,9 @@ collections:
             label: Text
             name: '-21d501a'
             widget: text
-          - hint: 'Original text: Cumarú, key: 78f876ee'
+          - hint: "Original text: Madera de Cumarú \_para deck, key: 47eabb58"
             label: Text
-            name: 78f876ee
+            name: 47eabb58
             widget: string
           - hint: >-
               Original text: El cumarú es un tipo de madera muy dura que resiste
@@ -1096,40 +1123,27 @@ collections:
             label: Text
             name: '-324dea78'
             widget: text
-          - hint: 'Original text: Huayruro, key: 10f27b65'
+          - hint: 'Original text: Madera de IPE para deck, key: 10cad864'
             label: Text
-            name: 10f27b65
-            widget: string
-          - hint: >-
-              Original text: El Huayruro es una madera que se utiliza para la
-              construcción de balsas y remos, lo que la hace una madera muy
-              resiente al agua y no requiere de mantenimiento., key: -371617dc
-            label: Text
-            name: '-371617dc'
-            widget: text
-          - hint: 'Original text: IPE, key: 11bfe'
-            label: Text
-            name: 11bfe
+            name: 10cad864
             widget: string
           - hint: >-
               Original text: La madera de Ipe es conocida como el palo de
               hierro. Es una madera muy estable y duradera. Es resistente a los
-              hongos. Su mantenimiento es moderado solo con aceite de Teca.,
-              key: -517f31eb
+              hongos. , key: -1a318c42
             label: Text
-            name: '-517f31eb'
+            name: '-1a318c42'
             widget: text
-          - hint: 'Original text: Teka Africana, key: -238c95da'
-            label: Text
-            name: '-238c95da'
-            widget: string
           - hint: >-
-              Original text: El Iroko o Teka africana es una madera dura y
-              resistente a las plagas, viene en varios colores y tras su
-              aplicación suele oscurecer con el tiempo., key: 7ba86bc1
+              Original text: Su mantenimiento es moderado y muy sencillo solo
+              con aceite de teca., key: -61801162
             label: Text
-            name: 7ba86bc1
-            widget: text
+            name: '-61801162'
+            widget: string
+          - hint: 'Original text: Deck de bambú, key: 4a8dfa7e'
+            label: Text
+            name: 4a8dfa7e
+            widget: string
           - hint: >-
               Original text: Conoce la nueva tendencia en decks y pisos de
               exteriores para terrazas y jardines. Es un tipo de suelo hecho a
@@ -1163,25 +1177,15 @@ collections:
             label: Text
             name: '-4b659361'
             widget: text
-          - hint: 'Original text: Eco Deck sintético de PVC y resinas, key: 40cf0748'
-            label: Text
-            name: 40cf0748
-            widget: string
           - hint: >-
-              Original text: Los Eco Decks o decks sintéticos son una
-              alternativa al deck de madera. Son una excelente opción pues
-              evitan gastos en mantenimiento por ser materiales de gran calidad
-              y sustentables., key: f0347e7
+              Original text: Los decks sintéticos son una alternativa al deck de
+              madera. Son una excelente opción pues evitan gastos en
+              mantenimiento por ser materiales de gran calidad y sustentables.
+              Están hechos de fibras naturales, polietileno y otros plásticos
+              que constituyen un material firme, durable, absorbente a humedades
+              y termitas y de poco mantenimiento., key: 3effcf36
             label: Text
-            name: f0347e7
-            widget: text
-          - hint: >-
-              Original text: Los deck sintéticos están hechos de fibras
-              naturales, polietileno y otros plásticos que constituyen un
-              material firme, durable, absorbente a humedades y termitas y de
-              poco mantenimiento., key: -71bbad9
-            label: Text
-            name: '-71bbad9'
+            name: 3effcf36
             widget: text
           - hint: >-
               Original text: Los materiales sintéticos duran por mucho tiempo y
@@ -1191,58 +1195,52 @@ collections:
             name: 73ced5e2
             widget: text
           - hint: >-
+              Original text: Galería de algunos de nuestros decks sintéticos,
+              key: 7b300b7e
+            label: Text
+            name: 7b300b7e
+            widget: string
+          - hint: >-
               Original text: En Europisos contamos con los mejores productos y
-              marcas de Eco Decks que ayudan a generar los más bellos espacios
-              de exterior., key: -125f0434
+              marcas que ayudan a generar los más bellos espacios de exterior.,
+              key: -3f3c4eb4
             label: Text
-            name: '-125f0434'
+            name: '-3f3c4eb4'
             widget: text
-          - hint: 'Original text: Nuestras marcas, key: -618b2b4e'
+          - hint: >-
+              Original text: Revestimientos tipo madera y vigas sintéticas, key:
+              325cb317
             label: Text
-            name: '-618b2b4e'
-            widget: string
-          - hint: 'Original text: Trex, key: 27e7d1'
-            label: Text
-            name: 27e7d1
+            name: 325cb317
             widget: string
           - hint: >-
-              Original text: La marca Trex es líder en el mercado de pisos de
-              madera sintética. Se especializan en pisos de alta durabilidad con
-              apariencia de maderas., key: 2329184f
+              Original text: Los revestimientos y vigas sintéticas tipo madera
+              es una gran opción para embellecer espacios, paredes, techos y
+              cualquier aplicación. Siendo una opción con nulo mantenimiento y
+              alta duración., key: -310afdd3
             label: Text
-            name: 2329184f
+            name: '-310afdd3'
             widget: text
           - hint: >-
-              Original text: Los materiales con los que están hechos los pisos
-              son 95.4% reciclados, con la ventaja de que por ser un piso
-              sintético puedes elegir entre diferentes tipos de acabados. Que
-              van del rojo caoba, maple hasta gris., key: -380a2f5f
+              Original text: Contáctanos para conocer todo nuestro catálogo en
+              decks, key: -4064ce53
             label: Text
-            name: '-380a2f5f'
-            widget: text
-          - hint: 'Original text: Ultrawood, key: -31de37c7'
+            name: '-4064ce53'
+            widget: string
+          - hint: 'Original text: Automatización de deck para alberca, key: 416fdc3a'
             label: Text
-            name: '-31de37c7'
+            name: 416fdc3a
             widget: string
           - hint: >-
-              Original text: Somos distribuidores de Ultrawood, la marca de
-              maderas sintéticas más importante de México y latinoamérica., key:
-              85244d
+              Original text: Conoce una alternativa elegante y eficiente con un
+              deck funcional para cubrir tu alberca, key: -1e2b1b71
             label: Text
-            name: 85244d
-            widget: text
-          - hint: >-
-              Original text: Las maderas Ultrawood se caracterizan por ser
-              durables y de fácil instalación. Son maderas hechas a base de
-              materiales reciclados -harina de madera y cáscara de arroz-
-              reforzados con polietilenos de alta densidad que ofrecen
-              seguridad, belleza y funcionalidad sin alteraciones al medio
-              ambiente. Los acabados son variados y se adecuan cualquier
-              necesidad, terrazas, áreas de juegos, zona de albercas etc., key:
-              -2d89ce4f
+            name: '-1e2b1b71'
+            widget: string
+          - hint: 'Original text: Solicita información, key: -7c5ffd7b'
             label: Text
-            name: '-2d89ce4f'
-            widget: text
+            name: '-7c5ffd7b'
+            widget: string
           - hint: >-
               Original text: Si ya tienes una instalación de deck y necesitas
               renovar la vida de la madera en Europisos te brindamos un servicio
@@ -1252,13 +1250,9 @@ collections:
             label: Text
             name: '-41c5caa0'
             widget: text
-          - hint: 'Original text: Ponerse en contacto>, key: a95df8a'
+          - hint: 'Original text: Ponte en contacto, key: 248636a6'
             label: Text
-            name: a95df8a
-            widget: string
-          - hint: 'Original text: Más información, key: 1b4c8cf8'
-            label: Text
-            name: 1b4c8cf8
+            name: 248636a6
             widget: string
           - hint: 'Original text: No hay elementos, key: -6a49d39f'
             label: Text
@@ -1276,9 +1270,13 @@ collections:
             label: Text
             name: '-3be4eef5'
             widget: string
-          - hint: 'Original text: Solicitar cotización:, key: 438e20d7'
+          - hint: 'Original text: Compártelo:, key: -4131881a'
             label: Text
-            name: 438e20d7
+            name: '-4131881a'
+            widget: string
+          - hint: 'Original text: Solicitar información:, key: 1cd7f23b'
+            label: Text
+            name: 1cd7f23b
             widget: string
           - hint: 'Original text: Nombre:, key: -1e41be8f'
             label: Text
@@ -1310,6 +1308,18 @@ collections:
             label: Text
             name: '-6065ad13'
             widget: string
+          - hint: 'Original text: Solicitar información, key: -72aeb621'
+            label: Text
+            name: '-72aeb621'
+            widget: string
+          - hint: 'Original text: Ver catálogo, key: -50fd480d'
+            label: Text
+            name: '-50fd480d'
+            widget: string
+          - hint: 'Original text: No items found., key: 3d503d2b'
+            label: Text
+            name: 3d503d2b
+            widget: string
           - hint: >-
               Original text: Fabricamos cualquier tipo de estructura en fibra de
               vidrio. No importa el tamaño, color o características de la
@@ -1329,6 +1339,10 @@ collections:
             label: Text
             name: '-70e87127'
             widget: text
+          - hint: 'Original text: Galería de proyectos, key: 2191c5fc'
+            label: Text
+            name: 2191c5fc
+            widget: string
           - hint: >-
               Original text: Galería de algunos proyectos en fibra de vidrio que
               hemos desarrollado con nuestros clientes y basados en diferentes
@@ -1660,15 +1674,12 @@ collections:
             label: Text
             name: 3ef6c8ee
             widget: text
-          - hint: 'Original text: Pérgolas de madera, key: -6606db80'
-            label: Text
-            name: '-6606db80'
-            widget: string
           - hint: >-
-              Original text: Diseñamos, construimos e instalamos pérgolas de
-              madera para exteriores, jardines y terrazas., key: 4006d49b
+              Original text: Construimos e instalamos cualquier diseño con
+              pérgolas de madera para exteriores, jardines y terrazas., key:
+              183c2af3
             label: Text
-            name: 4006d49b
+            name: 183c2af3
             widget: text
           - hint: 'Original text: Pérgolas de fibra de vidrio, key: -6f73ca48'
             label: Text
@@ -1682,6 +1693,10 @@ collections:
             label: Text
             name: 7054690b
             widget: string
+          - hint: "Original text: Las pérgolas de\_ metal son una forma elegante de cubrir espacios, son de alta duración y mantenimiento sencillo., key: 72e6e360"
+            label: Text
+            name: 72e6e360
+            widget: text
           - hint: >-
               Original text: En Europisos, te ofrecemos la última tecnología en
               estructuras para pérgolas de acuerdo a tu proyecto y presupuesto.
@@ -1785,13 +1800,13 @@ collections:
             label: Text
             name: '-a8dae16'
             widget: text
-          - hint: 'Original text: Ver galería de imágenes >, key: 4abc3cd4'
+          - hint: 'Original text: Ver galería de imágenes, key: -14111ca'
             label: Text
-            name: 4abc3cd4
+            name: '-14111ca'
             widget: string
-          - hint: 'Original text: Techo de encapsulado de Ixtle, key: 6141cb0c'
+          - hint: 'Original text: Techo de lámina Epco, key: -192cf145'
             label: Text
-            name: 6141cb0c
+            name: '-192cf145'
             widget: string
           - hint: 'Original text: Encapsulados distintos materiales, key: 467dcb00'
             label: Text
@@ -1815,6 +1830,12 @@ collections:
             label: Text
             name: 4f1afd10
             widget: string
+          - hint: >-
+              Original text: Diseñamos, construimos e instalamos pérgolas de
+              madera para exteriores, jardines y terrazas., key: 4006d49b
+            label: Text
+            name: 4006d49b
+            widget: text
           - hint: >-
               Original text: La pérgola de madera es una opción ideal para
               embellecer algún espacio exterior como una terraza o un jardín y
@@ -1916,20 +1937,58 @@ collections:
             name: 331a2d7d
             widget: text
           - hint: >-
-              Original text: La estética de este tipo de pérgolas es muy
-              distinta de las pérgolas de madera. Sin embargo, por el material
-              que está hecho -herrería- resulta una excelente combinación entre
-              lo durable y lo moderno., key: -721acf1
-            label: Text
-            name: '-721acf1'
-            widget: text
-          - hint: >-
               Original text: Las pérgolas de metal están hechas de herrería, un
               tipo de aleación de metales que ofrece fortaleza a la estructura.
               La herrería, es un material muy resistente, que si se mantiene
               adecuadamente, puede perdurar por muchos años., key: -424550d7
             label: Text
             name: '-424550d7'
+            widget: text
+          - hint: 'Original text: Diseña tu estilo, key: -7f453c74'
+            label: Text
+            name: '-7f453c74'
+            widget: string
+          - hint: >-
+              Original text: Podemos hacer un diseño personalizado según las
+              necesidades y estilo deseado. , key: 369c0d6c
+            label: Text
+            name: 369c0d6c
+            widget: string
+          - hint: 'Original text: Los diseños más comunes son , key: 7a68c2b9'
+            label: Text
+            name: 7a68c2b9
+            widget: string
+          - hint: 'Original text: tiras, key: 694198f'
+            label: Text
+            name: 694198f
+            widget: string
+          - hint: 'Original text: , , key: 574'
+            label: Text
+            name: '574'
+            widget: string
+          - hint: 'Original text: cuadros, key: 423601a1'
+            label: Text
+            name: 423601a1
+            widget: string
+          - hint: 'Original text: persianas, key: 32805bd2'
+            label: Text
+            name: 32805bd2
+            widget: string
+          - hint: 'Original text:  o , key: 85b1'
+            label: Text
+            name: 85b1
+            widget: string
+          - hint: 'Original text: celosías, key: -3676e48f'
+            label: Text
+            name: '-3676e48f'
+            widget: string
+          - hint: >-
+              Original text: La estética de este tipo de pérgolas es muy
+              distinta de las pérgolas de madera. Sin embargo, por estar hecho
+              de herrería resulta una excelente combinación entre lo durable y
+              lo moderno., key: -7d960277
+            label: Text
+            name: '-7d960277'
             widget: text
           - hint: >-
               Original text: Tipos de techos para pergolado de metal, key:
@@ -1960,6 +2019,10 @@ collections:
             label: Text
             name: 33a594c2
             widget: text
+          - hint: 'Original text: Ponerse en contacto>, key: a95df8a'
+            label: Text
+            name: a95df8a
+            widget: string
           - hint: >-
               Original text: El arte y la decoración cobran vida propia con las
               piezas de fibra de vidrio. Diseñamos todo tipo de piezas únicas y
@@ -1986,18 +2049,6 @@ collections:
             label: Text
             name: 4a251b8b
             widget: text
-          - hint: 'Original text: Solicitar información, key: -72aeb621'
-            label: Text
-            name: '-72aeb621'
-            widget: string
-          - hint: 'Original text: Ver catálogo, key: -50fd480d'
-            label: Text
-            name: '-50fd480d'
-            widget: string
-          - hint: 'Original text: No items found., key: 3d503d2b'
-            label: Text
-            name: 3d503d2b
-            widget: string
           - hint: 'Original text: Portafolio de proyectos, key: 3f6800a6'
             label: Text
             name: 3f6800a6
@@ -2082,6 +2133,10 @@ collections:
             label: Text
             name: 617cac04
             widget: string
+          - hint: 'Original text: Productos y servicios >, key: 3fd8b3a7'
+            label: Text
+            name: 3fd8b3a7
+            widget: string
           - hint: >-
               Original text: Durabilidad, resistencia, ligereza y economía, key:
               -5f600124
@@ -2101,13 +2156,6 @@ collections:
               arquitectónicos., key: -740f8bc4
             label: Text
             name: '-740f8bc4'
-            widget: text
-          - hint: >-
-              Original text: Diseño vanguardista y resistencia garantizada. Las
-              pérgolas y vigas de fibra de vidrio logran una apariencia natural
-              y son duraderas., key: -27e98591
-            label: Text
-            name: '-27e98591'
             widget: text
           - hint: >-
               Original text: Manufacturamos estructuras especiales, diseños
@@ -2130,6 +2178,10 @@ collections:
             label: Text
             name: 95ba8ab
             widget: text
+          - hint: 'Original text: Solicitar informes, key: 29102491'
+            label: Text
+            name: '29102491'
+            widget: string
           - hint: >-
               Original text: Diseño y construcción de Saunas de Madera, key:
               -73674275
@@ -2162,9 +2214,9 @@ collections:
             label: Text
             name: 524692bc
             widget: text
-          - hint: 'Original text: Techos y cubiertas para Pérgolas, key: -4abb5670'
+          - hint: 'Original text: Techos y cubiertas para pérgolas, key: -4e95ba90'
             label: Text
-            name: '-4abb5670'
+            name: '-4e95ba90'
             widget: string
           - hint: >-
               Original text: El techo de tu pérgola se define por el tipo de
@@ -2181,29 +2233,29 @@ collections:
             name: '-3084597'
             widget: text
           - hint: >-
-              Original text: El Encapusulado FV de Ixtle es un tipo de techo
-              laminado y decorativo hecho a base de fibras naturales en resina y
-              reforzado con fibra de vidrio. Su presentación puede ser lisa o
-              acanalada. Es un material resistente y de mucha duración, ideal
-              para cubiertas ligeras y decorativas en techos inclinados., key:
-              7a9143cf
+              Original text: Lámina Epco es un tipo de techo laminado y
+              decorativo hecho a base de fibras naturales de Ixtle (Yute) en
+              resina y reforzado con fibra de vidrio. Su presentación puede ser
+              lisa o acanalada. Es un material resistente y de mucha duración,
+              ideal para cubiertas ligeras y decorativas en techos inclinados.,
+              key: 663a2957
             label: Text
-            name: 7a9143cf
+            name: 663a2957
             widget: text
           - hint: >-
-              Original text: El ixtle es material económico y resistente. Está
-              fabricado en comunidades del sur de México, es un material
-              ecológico, sustentable y por su modo de fabricación es considerado
-              un material que promueve el comercio justo por que apoya a las
-              familias ixtleras., key: -7ff8a081
+              Original text: El ixtle o yute es material ecológico y resistente
+              con una apariencia atractiva. Está fabricado en comunidades del
+              sur de México, es un material ecológico, sustentable y por su modo
+              de fabricación es considerado un material que promueve el comercio
+              justo por que apoya a las familias ixtleras., key: 77dd9e1d
             label: Text
-            name: '-7ff8a081'
+            name: 77dd9e1d
             widget: text
           - hint: >-
-              Original text: ¿Cuáles son las ventajas del techo con Encapsulado
-              FV?, key: 2a69196
+              Original text: ¿Cuáles son las ventajas del techo de lámina Epco?,
+              key: -24500ddb
             label: Text
-            name: 2a69196
+            name: '-24500ddb'
             widget: string
           - hint: 'Original text: Es un material fresco y traslúcido, key: 2bde318c'
             label: Text
@@ -2484,6 +2536,16 @@ collections:
             label: Text
             name: '-6f76fb6e'
             widget: string
+          - hint: >-
+              Original text: Somos fabricantes e instalamos todo tipo de
+              pérgolas, key: 745648e1
+            label: Text
+            name: '745648e1'
+            widget: string
+          - hint: 'Original text: MARCA, key: 45bda1c'
+            label: Text
+            name: 45bda1c
+            widget: string
           - hint: "Original text: LINEA\_DE\_PRODUCTO, key: -18e9feb4"
             label: Text
             name: '-18e9feb4'
@@ -2495,10 +2557,6 @@ collections:
           - hint: 'Original text: Ver productos, key: -3e91794a'
             label: Text
             name: '-3e91794a'
-            widget: string
-          - hint: 'Original text: MARCA, key: 45bda1c'
-            label: Text
-            name: 45bda1c
             widget: string
       - label: Links
         name: links
@@ -2564,10 +2622,6 @@ collections:
             label: Link
             name: '-2c4698f7'
             widget: string
-          - hint: 'Original link: /saunas, key: -7ff00f38'
-            label: Link
-            name: '-7ff00f38'
-            widget: string
           - hint: 'Original link: /mobiliario-y-carpinteria, key: 381f0123'
             label: Link
             name: 381f0123
@@ -2584,21 +2638,17 @@ collections:
             label: Link
             name: 768ad3ac
             widget: string
-          - hint: 'Original link: #servicios, key: 5a77819a'
-            label: Link
-            name: 5a77819a
-            widget: string
           - hint: 'Original link: #follaje-sintetico, key: -e8b7f3'
             label: Link
             name: '-e8b7f3'
             widget: string
-          - hint: 'Original link: /marcas, key: 75d156a6'
-            label: Link
-            name: 75d156a6
-            widget: string
           - hint: 'Original link: /portafolio, key: 65bace98'
             label: Link
             name: 65bace98
+            widget: string
+          - hint: 'Original link: /marcas, key: 75d156a6'
+            label: Link
+            name: 75d156a6
             widget: string
           - hint: >-
               Original link:
@@ -2617,6 +2667,10 @@ collections:
               key: -4886a790
             label: Link
             name: '-4886a790'
+            widget: string
+          - hint: 'Original link: https://www.manubrio.mx/, key: -b70c173'
+            label: Link
+            name: '-b70c173'
             widget: string
           - hint: >-
               Original link:
@@ -2727,74 +2781,6 @@ collections:
             label: Link
             name: 41e948c4
             widget: string
-          - hint: >-
-              Original link:
-              https://europisosdemaderaydecks.com/techos-y-cubiertas-para-pergolas.html#encapsuladoixtle,
-              key: -3896a5cd
-            label: Link
-            name: '-3896a5cd'
-            widget: string
-          - hint: >-
-              Original link:
-              https://europisosdemaderaydecks.com/techos-y-cubiertas-para-pergolas.html#encapsulados,
-              key: -773ee438
-            label: Link
-            name: '-773ee438'
-            widget: string
-          - hint: >-
-              Original link:
-              https://europisosdemaderaydecks.com/techos-y-cubiertas-para-pergolas.html#policarbonato,
-              key: 30c2c9f3
-            label: Link
-            name: 30c2c9f3
-            widget: string
-          - hint: >-
-              Original link:
-              https://europisosdemaderaydecks.com/techos-y-cubiertas-para-pergolas.html#vidrio,
-              key: -1a374b9
-            label: Link
-            name: '-1a374b9'
-            widget: string
-          - hint: >-
-              Original link:
-              https://europisosdemaderaydecks.com/techos-y-cubiertas-para-pergolas.html#lona,
-              key: -620ce1aa
-            label: Link
-            name: '-620ce1aa'
-            widget: string
-          - hint: >-
-              Original link:
-              /techos-y-cubiertas-para-pergolas.html#encapsuladoixtle, key:
-              6da843fe
-            label: Link
-            name: 6da843fe
-            widget: string
-          - hint: >-
-              Original link:
-              /techos-y-cubiertas-para-pergolas.html#encapsulados, key:
-              -7f055ced
-            label: Link
-            name: '-7f055ced'
-            widget: string
-          - hint: >-
-              Original link:
-              /techos-y-cubiertas-para-pergolas.html#policarbonato, key:
-              3fba2c08
-            label: Link
-            name: 3fba2c08
-            widget: string
-          - hint: >-
-              Original link: /techos-y-cubiertas-para-pergolas.html#vidrio, key:
-              64f426d2
-            label: Link
-            name: 64f426d2
-            widget: string
-          - hint: >-
-              Original link: /techos-y-cubiertas-para-pergolas.html#lona, key:
-              5c4220a1
-            label: Link
-            name: 5c4220a1
-            widget: string
           - hint: 'Original link: #productos, key: 2758d250'
             label: Link
             name: 2758d250
@@ -2822,6 +2808,10 @@ collections:
           - hint: 'Original link: #ventajasencapsulado, key: -5d1a6568'
             label: Link
             name: '-5d1a6568'
+            widget: string
+          - hint: 'Original link: #decksdemadera, key: -6e365694'
+            label: Link
+            name: '-6e365694'
             widget: string
       - label: Images
         name: images
@@ -2871,7 +2861,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: i16e03a72
+            name: 322d96af
             widget: object
             fields:
               - name: url
@@ -2897,33 +2887,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 322d96af
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: i274eeb05
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 55f34754
             widget: object
             fields:
               - name: url
@@ -2975,72 +2939,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: i453e1435
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: 35a1b5fb
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: i1e562957
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 7ec2bdc7
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: a105fca
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 6328b455
             widget: object
             fields:
               - name: url
@@ -3067,19 +2966,6 @@ collections:
                 required: false
           - label: Image
             name: i773adbaf
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 2672f475
             widget: object
             fields:
               - name: url
@@ -3196,6 +3082,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: i16e03a72
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: i49b02526
             widget: object
             fields:
@@ -3209,7 +3108,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: i2cc8c589
+            name: 55f34754
             widget: object
             fields:
               - name: url
@@ -3262,6 +3161,19 @@ collections:
                 required: false
           - label: Image
             name: 81bf26
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 6328b455
             widget: object
             fields:
               - name: url
@@ -3677,6 +3589,84 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: 7ec2bdc7
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: a105fca
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 24d0b980
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '34041e18'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i6a972564
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i624be1d7
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: 5794294a
             widget: object
             fields:
@@ -3807,6 +3797,45 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: '-63ceb2dd'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-5b3e035b'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-535eb38'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: 3bcfc85e
             widget: object
             fields:
@@ -3821,6 +3850,201 @@ collections:
                 required: false
           - label: Image
             name: '-427b5ae9'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5c6697b3
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5c74af34
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5c9ef5b7
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7be68237'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7a31a998'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-787cd0f9'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-76c7f85a'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-75131fbb'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-735e471c'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-71a96e7d'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-4b84ecd2'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-4b76d551'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-4b68bdd0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-4e250faf'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '13051060'
             widget: object
             fields:
               - name: url
