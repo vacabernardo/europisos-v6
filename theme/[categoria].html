@@ -35,17 +35,82 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {%- include "partials/menu" -%}
   <div class="section-catalogo-interior-derecha">
     <h1 class="titulo-categoria-pisos">{{ title }}</h1>
-    {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
-      {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
-        {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
-          <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
-          <h2 class="h2-small">{{ item.data.title }}</h2>
-          <a href="{{ item.url }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
-        </div>{%- endfor -%}
-      </div>{%- endunless -%}
-      {%- if collection.length == 0 -%}<div class="empty-state-2 w-dyn-empty">
-        <div>{{ texts.-6a49d39f }}</div>
-      </div>{%- endif -%}
+    <div class="container-div">
+      <div class="center">{{ texts.185379ae }}</div>
+      <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
+        <div class="tabs-menu-2 w-tab-menu">
+          <a data-w-tab="Tab 1" class="tabs-precios w-inline-block w-tab-link w--current">
+            <div>{{ texts.4d3b0cd }}</div>
+          </a>
+          <a data-w-tab="Tab 2" class="tabs-precios w-inline-block w-tab-link">
+            <div>{{ texts.7d385ea1 }}</div>
+          </a>
+          <a data-w-tab="Tab 3" class="tabs-precios w-inline-block w-tab-link">
+            <div>{{ texts.-7165b55e }}</div>
+          </a>
+          <a data-w-tab="Tab 4" class="tabs-precios w-inline-block w-tab-link">
+            <div>{{ texts.503d6637 }}</div>
+          </a>
+        </div>
+        <div class="w-tab-content">
+          <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+              {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
+                {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
+                  <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
+                  <h2 class="h2-small">{{ item.data.title }}</h2>
+                  <a href="{{ item.url }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+                </div>{%- endfor -%}
+              </div>{%- endunless -%}
+              {%- if collection.length == 0 -%}<div class="empty-state-2 w-dyn-empty">
+                <div>{{ texts.-6a49d39f }}</div>
+              </div>{%- endif -%}
+            </div>
+          </div>
+          <div data-w-tab="Tab 2" class="w-tab-pane">
+            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+              {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
+                {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
+                  <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
+                  <h2 class="h2-small">{{ item.data.title }}</h2>
+                  <a href="{{ item.url }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+                </div>{%- endfor -%}
+              </div>{%- endunless -%}
+              {%- if collection.length == 0 -%}<div class="empty-state-2 w-dyn-empty">
+                <div>{{ texts.-6a49d39f }}</div>
+              </div>{%- endif -%}
+            </div>
+          </div>
+          <div data-w-tab="Tab 3" class="w-tab-pane">
+            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+              {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
+                {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
+                  <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
+                  <h2 class="h2-small">{{ item.data.title }}</h2>
+                  <a href="{{ item.url }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+                </div>{%- endfor -%}
+              </div>{%- endunless -%}
+              {%- if collection.length == 0 -%}<div class="empty-state-2 w-dyn-empty">
+                <div>{{ texts.-6a49d39f }}</div>
+              </div>{%- endif -%}
+            </div>
+          </div>
+          <div data-w-tab="Tab 4" class="w-tab-pane">
+            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT", "ALL", page.inputPath -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+              {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
+                {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
+                  <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
+                  <h2 class="h2-small">{{ item.data.title }}</h2>
+                  <a href="{{ item.url }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+                </div>{%- endfor -%}
+              </div>{%- endunless -%}
+              {%- if collection.length == 0 -%}<div class="empty-state-2 w-dyn-empty">
+                <div>{{ texts.-6a49d39f }}</div>
+              </div>{%- endif -%}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   {%- include "partials/footer" -%}

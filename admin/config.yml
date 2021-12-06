@@ -242,6 +242,18 @@ collections:
         display_fields:
           - title
         multiple: false
+      - hint: ''
+        name: f_precio
+        label: Precio
+        widget: select
+        required: false
+        options:
+          - label: Básico
+            value: Básico
+          - label: Estandar
+            value: Estandar
+          - label: Premium
+            value: Premium
       - label: Tags
         widget: hidden
         name: tags
@@ -2596,6 +2608,26 @@ collections:
               3d64bebf
             label: Text
             name: 3d64bebf
+            widget: string
+          - hint: 'Original text: Rango de precio:, key: 185379ae'
+            label: Text
+            name: 185379ae
+            widget: string
+          - hint: 'Original text: Todos, key: 4d3b0cd'
+            label: Text
+            name: 4d3b0cd
+            widget: string
+          - hint: 'Original text: Básico, key: 7d385ea1'
+            label: Text
+            name: 7d385ea1
+            widget: string
+          - hint: 'Original text: Estandar, key: -7165b55e'
+            label: Text
+            name: '-7165b55e'
+            widget: string
+          - hint: 'Original text: Premium, key: 503d6637'
+            label: Text
+            name: 503d6637
             widget: string
       - label: Links
         name: links

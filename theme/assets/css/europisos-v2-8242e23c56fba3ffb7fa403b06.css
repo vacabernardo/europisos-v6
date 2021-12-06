@@ -3085,7 +3085,8 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   margin: 60px auto 120px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -3178,7 +3179,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 25%;
+  width: 30%;
   margin: 5px;
   padding: 3px 3px 60px;
   -webkit-box-orient: vertical;
@@ -3453,7 +3454,7 @@ p {
 .section-catalogo-interior-derecha {
   width: 100%;
   padding-top: 60px;
-  padding-bottom: 180px;
+  padding-bottom: 120px;
 }
 
 .contenedor-categoria-titulo {
@@ -3914,6 +3915,36 @@ p {
   transform: scale(1.01);
 }
 
+.tabs-menu-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #faf7f2;
+}
+
+.tabs-precios {
+  text-align: center;
+}
+
+.tabs-precios.w--current {
+  background-color: #eb692d;
+  color: #fff;
+}
+
+.container-div {
+  width: 100%;
+  max-width: 1280px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 36px;
@@ -4272,10 +4303,6 @@ p {
   .contenedor-categoria-catalogo {
     width: auto;
     max-width: 48%;
-  }
-
-  .contenedor-categoria-piso {
-    width: 50%;
   }
 
   .link-block-piso {
@@ -4867,6 +4894,10 @@ p {
     align-items: center;
   }
 
+  .contenedor-categoria-piso {
+    width: 45%;
+  }
+
   .imagen-thumbnail-piso {
     width: 100%;
     max-height: 450px;
@@ -5351,7 +5382,9 @@ p {
   }
 
   .contenedor-categoria-piso {
-    width: 100%;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .imagen-thumbnail-piso {
@@ -5403,6 +5436,14 @@ p {
 
   .cont-info-piso {
     padding-left: 16px;
+  }
+
+  .tabs-menu-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
