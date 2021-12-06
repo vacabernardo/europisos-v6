@@ -2581,6 +2581,22 @@ collections:
             label: Text
             name: 6531414e
             widget: string
+          - hint: >-
+              Original text: Decks de madera, Deck sintético y Deck de bambú,
+              key: 1da09c6f
+            label: Text
+            name: 1da09c6f
+            widget: string
+          - hint: 'Original text: Decks de madera para exterior, key: -6f5be135'
+            label: Text
+            name: '-6f5be135'
+            widget: string
+          - hint: >-
+              Original text: ¿Buscas un deck o piso para exterior?, key:
+              3d64bebf
+            label: Text
+            name: 3d64bebf
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
