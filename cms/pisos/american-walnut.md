@@ -3,7 +3,7 @@ title: American walnut
 created-on: 2021-10-08T15:36:09.563Z
 updated-on: 2021-10-08T15:36:09.582Z
 published-on: 2021-10-08T15:36:09.598Z
-f_categoria: cms/categoria/pisos-de-ingenieria.md
+f_categoria: cms/categoria/piso-de-madera.md
 f_foto-principal-de-producto:
   url: /assets/images/american-walnut.jpeg
 f_descripcion: "Los pisos de madera de ingeniería se caracterizan por su
