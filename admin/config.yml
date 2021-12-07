@@ -1029,10 +1029,10 @@ collections:
             name: 66f0678c
             widget: string
           - hint: >-
-              Original text: Decks de madera, Deck sintético y Deck de Bambú,
-              key: 1bddac4f
+              Original text: Decks de madera, Deck sintético y Deck de bambú,
+              key: 1da09c6f
             label: Text
-            name: 1bddac4f
+            name: 1da09c6f
             widget: string
           - hint: >-
               Original text: Los pisos de Deck son una opción muy útil para
@@ -1124,9 +1124,17 @@ collections:
             label: Text
             name: '-3675d188'
             widget: string
-          - hint: 'Original text: Madera de Teka para deck, key: -5e2739cd'
+          - hint: 'Original text: Madera de Teka, key: 59f589ea'
             label: Text
-            name: '-5e2739cd'
+            name: 59f589ea
+            widget: string
+          - hint: "Original text: VER\_GALERÍA, key: 665c3816"
+            label: Text
+            name: 665c3816
+            widget: string
+          - hint: 'Original text: Teka para deck, key: -2e315450'
+            label: Text
+            name: '-2e315450'
             widget: string
           - hint: >-
               Original text: La teka es un tipo de madera muy durable al tiempo,
@@ -1136,9 +1144,13 @@ collections:
             label: Text
             name: '-21d501a'
             widget: text
-          - hint: "Original text: Madera de Cumarú \_para deck, key: 47eabb58"
+          - hint: 'Original text: Madera de Cumarú, key: -69653b8f'
             label: Text
-            name: 47eabb58
+            name: '-69653b8f'
+            widget: string
+          - hint: "Original text: Cumarú \_para deck, key: -7fd87745"
+            label: Text
+            name: '-7fd87745'
             widget: string
           - hint: >-
               Original text: El cumarú es un tipo de madera muy dura que resiste
@@ -1148,9 +1160,13 @@ collections:
             label: Text
             name: '-324dea78'
             widget: text
-          - hint: 'Original text: Madera de IPE para deck, key: 10cad864'
+          - hint: 'Original text: Madera de IPE, key: -1e218aa5'
             label: Text
-            name: 10cad864
+            name: '-1e218aa5'
+            widget: string
+          - hint: 'Original text: IPE para deck, key: -7a0c30b9'
+            label: Text
+            name: '-7a0c30b9'
             widget: string
           - hint: >-
               Original text: La madera de Ipe es conocida como el palo de
@@ -1278,6 +1294,26 @@ collections:
           - hint: 'Original text: Ponte en contacto, key: 248636a6'
             label: Text
             name: 248636a6
+            widget: string
+          - hint: 'Original text: Rango de precio:, key: 185379ae'
+            label: Text
+            name: 185379ae
+            widget: string
+          - hint: 'Original text: Todos, key: 4d3b0cd'
+            label: Text
+            name: 4d3b0cd
+            widget: string
+          - hint: 'Original text: Básico, key: 7d385ea1'
+            label: Text
+            name: 7d385ea1
+            widget: string
+          - hint: 'Original text: Estandar, key: -7165b55e'
+            label: Text
+            name: '-7165b55e'
+            widget: string
+          - hint: 'Original text: Premium, key: 503d6637'
+            label: Text
+            name: 503d6637
             widget: string
           - hint: 'Original text: No hay elementos, key: -6a49d39f'
             label: Text
@@ -2074,6 +2110,16 @@ collections:
             label: Text
             name: 4a251b8b
             widget: text
+          - hint: 'Original text: Decks de madera para exterior, key: -6f5be135'
+            label: Text
+            name: '-6f5be135'
+            widget: string
+          - hint: >-
+              Original text: ¿Buscas un deck o piso para exterior?, key:
+              3d64bebf
+            label: Text
+            name: 3d64bebf
+            widget: string
           - hint: 'Original text: Portafolio de proyectos, key: 3f6800a6'
             label: Text
             name: 3f6800a6
@@ -2582,52 +2628,6 @@ collections:
           - hint: 'Original text: Ver productos, key: -3e91794a'
             label: Text
             name: '-3e91794a'
-            widget: string
-          - hint: 'Original text: Catálogo de decks, key: -2f1d9aab'
-            label: Text
-            name: '-2f1d9aab'
-            widget: string
-          - hint: >-
-              Original text: ¿buscas un deck o piso para exterior? Conoce
-              nuestro portafolio de decks, key: 6531414e
-            label: Text
-            name: 6531414e
-            widget: string
-          - hint: >-
-              Original text: Decks de madera, Deck sintético y Deck de bambú,
-              key: 1da09c6f
-            label: Text
-            name: 1da09c6f
-            widget: string
-          - hint: 'Original text: Decks de madera para exterior, key: -6f5be135'
-            label: Text
-            name: '-6f5be135'
-            widget: string
-          - hint: >-
-              Original text: ¿Buscas un deck o piso para exterior?, key:
-              3d64bebf
-            label: Text
-            name: 3d64bebf
-            widget: string
-          - hint: 'Original text: Rango de precio:, key: 185379ae'
-            label: Text
-            name: 185379ae
-            widget: string
-          - hint: 'Original text: Todos, key: 4d3b0cd'
-            label: Text
-            name: 4d3b0cd
-            widget: string
-          - hint: 'Original text: Básico, key: 7d385ea1'
-            label: Text
-            name: 7d385ea1
-            widget: string
-          - hint: 'Original text: Estandar, key: -7165b55e'
-            label: Text
-            name: '-7165b55e'
-            widget: string
-          - hint: 'Original text: Premium, key: 503d6637'
-            label: Text
-            name: 503d6637
             widget: string
       - label: Links
         name: links
