@@ -4,6 +4,9 @@ created-on: 2021-10-06T18:12:01.499Z
 updated-on: 2021-10-06T18:12:01.514Z
 published-on: 2021-10-06T18:12:01.524Z
 f_categoria: cms/categoria/piso-de-madera.md
+f_foto-principal-de-producto:
+  url: /assets/images/grigio-pisomadera.jpeg
+  alt: Grigio piso de madera
 f_descripcion: "Los pisos de ingeniería se construyen con madera totalmente
   natural. Está reforzada por un núcleo de fibra cruzada de múltiples capas, que
   ofrece una belleza y durabilidad inigualables. Tenemos disponible en una
