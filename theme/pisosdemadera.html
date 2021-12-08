@@ -68,9 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- assign collection = collections.categoria | filter: "f_deck,ne,true", "ALL", page.inputPath -%}<div class="w-dyn-list">
       {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
         {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
-          <a href="{{ item.url }}" class="link-block-5link-block-5 w-inline-block">
-            <div class="imagen-boton-redondo-2" style="background-image: url('{{item.data.f_imagen.url}}');"></div>
-          </a>
+          <a href="{{ item.url }}" class="link-block-5link-block-5 w-inline-block">{%- image item.data.f_imagen.url, item.data.f_imagen.alt, '[{"max":479,"size":"200px"},{"max":767,"size":"46vw"},{"max":991,"size":"47vw"},{"max":10000,"size":"31vw"}]', 'loading="lazy" class="imagen-boton-redondo-2"' -%}</a>
           <h2 class="h2-small">{{ item.data.title }}</h2>
           <p class="paragraph dark small center">{{ item.data.f_descripcion }}</p>
           <a href="{{ item.url }}" class="boton hide w-button">{{ texts.-72aeb621 }}</a>

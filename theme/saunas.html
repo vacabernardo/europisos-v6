@@ -42,24 +42,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
   {%- include "partials/menu" -%}
   <div class="section-header-1 wf-section">
-    <div data-delay="3500" data-animation="cross" class="slider-3 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="1500" data-infinite="true">
-      <div class="w-slider-mask">
-        <div class="sauna-slider _01 w-slide"></div>
+    <div class="header-relative-container">
+      <div data-delay="3500" data-animation="cross" class="slider-3 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="1500" data-infinite="true">
+        <div class="w-slider-mask">
+          <div class="sauna-slider _01 w-slide"></div>
+        </div>
+        <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-left">
+          <div class="w-icon-slider-left"></div>
+        </div>
+        <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-right">
+          <div class="w-icon-slider-right"></div>
+        </div>
+        <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-nav w-round"></div>
       </div>
-      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-left">
-        <div class="w-icon-slider-left"></div>
-      </div>
-      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-right">
-        <div class="w-icon-slider-right"></div>
-      </div>
-      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-nav w-round"></div>
-    </div>
-    <div class="div-heading-1">
-      <div class="w-container">
-        <h1 class="heading-h1 center light">{{ texts.-73674275 }}</h1>
-        <p class="paragraph light big center">{{ texts.-3247818b }}</p>
-        <div class="div-block">
-          <a href="{{ links.23 }}" class="boton-naranja w-button">{{ texts.-39baa740 }}</a>
+      <div class="div-heading-1">
+        <div class="w-container">
+          <h1 class="heading-h1 center light">{{ texts.-73674275 }}</h1>
+          <p class="paragraph light big center">{{ texts.-3247818b }}</p>
+          <div class="div-block">
+            <a href="{{ links.23 }}" class="boton-naranja w-button">{{ texts.-39baa740 }}</a>
+          </div>
         </div>
       </div>
     </div>
@@ -72,8 +74,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <p class="paragraph dark medium center">{{ texts.524692bc }}</p>
       <a href="{{ links.23 }}" class="boton-naranja w-button">{{ texts.2e35f721 }}</a>
       <div class="div-galeria-2-column">
-        <div class="div-block-14">{%- image images.3cfaef50.url, images.3cfaef50.alt, '[{"max":479,"size":"45vw"},{"max":10000,"size":"217.5px"}]', 'class="img-columnas"' -%}{%- image images.3d171e52.url, images.3d171e52.alt, '[{"max":479,"size":"45vw"},{"max":10000,"size":"217.5px"}]', 'class="img-columnas"' -%}</div>
-        <div class="div-block-14">{%- image images.3d0906d1.url, images.3d0906d1.alt, '[{"max":479,"size":"45vw"},{"max":10000,"size":"217.5px"}]', 'width="435" class="img-columnas"' -%}{%- image images.3d2535d3.url, images.3d2535d3.alt, '[{"max":479,"size":"45vw"},{"max":10000,"size":"217.5px"}]', 'width="435" class="img-columnas"' -%}</div>
+        <div class="div-block-14">{%- image images.3cfaef50.url, images.3cfaef50.alt, '[{"max":767,"size":"44vw"},{"max":10000,"size":"217.5px"}]', 'class="img-columnas"' -%}{%- image images.3d171e52.url, images.3d171e52.alt, '[{"max":767,"size":"44vw"},{"max":10000,"size":"217.5px"}]', 'class="img-columnas"' -%}</div>
+        <div class="div-block-14">{%- image images.3d0906d1.url, images.3d0906d1.alt, '[{"max":767,"size":"44vw"},{"max":10000,"size":"217.5px"}]', 'width="435" class="img-columnas"' -%}{%- image images.3d2535d3.url, images.3d2535d3.alt, '[{"max":767,"size":"44vw"},{"max":10000,"size":"217.5px"}]', 'width="435" class="img-columnas"' -%}</div>
       </div>
     </div>
   </div>

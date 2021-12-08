@@ -486,6 +486,14 @@ collections:
             label: Text
             name: '33226165'
             widget: string
+          - hint: 'Original text: Revestimientos, key: -7cd47973'
+            label: Text
+            name: '-7cd47973'
+            widget: string
+          - hint: 'Original text: Revestimiento, key: -6f61b15a'
+            label: Text
+            name: '-6f61b15a'
+            widget: string
           - hint: 'Original text: Pisos de madera, key: -1dca6e3f'
             label: Text
             name: '-1dca6e3f'
@@ -1108,11 +1116,16 @@ collections:
             widget: string
           - hint: >-
               Original text: Los decks de madera son de alta durabilidad y lucen
-              mucho. Las maderas que utilizamos en Europisos son de alta calidad
-              y están trabajadas para su colocación en exteriores., key:
-              -41b86dd1
+              mucho., key: -13dd06d9
             label: Text
-            name: '-41b86dd1'
+            name: '-13dd06d9'
+            widget: string
+          - hint: >-
+              Original text: Las maderas que utilizamos en Europisos son de alta
+              calidad y están trabajadas para su colocación en exteriores., key:
+              76652456
+            label: Text
+            name: '76652456'
             widget: text
           - hint: 'Original text: Tipos de madera para deck, key: 593a958b'
             label: Text
@@ -1242,13 +1255,6 @@ collections:
             name: 7b300b7e
             widget: string
           - hint: >-
-              Original text: En Europisos contamos con los mejores productos y
-              marcas que ayudan a generar los más bellos espacios de exterior.,
-              key: -3f3c4eb4
-            label: Text
-            name: '-3f3c4eb4'
-            widget: text
-          - hint: >-
               Original text: Revestimientos tipo madera y vigas sintéticas, key:
               325cb317
             label: Text
@@ -1257,11 +1263,16 @@ collections:
           - hint: >-
               Original text: Los revestimientos y vigas sintéticas tipo madera
               es una gran opción para embellecer espacios, paredes, techos y
-              cualquier aplicación. Siendo una opción con nulo mantenimiento y
-              alta duración., key: -310afdd3
+              cualquier aplicación. , key: 205d841
             label: Text
-            name: '-310afdd3'
+            name: 205d841
             widget: text
+          - hint: >-
+              Original text: Siendo una opción con nulo mantenimiento y alta
+              duración., key: 49a4fb4e
+            label: Text
+            name: 49a4fb4e
+            widget: string
           - hint: >-
               Original text: Contáctanos para conocer todo nuestro catálogo en
               decks, key: -4064ce53
@@ -2629,6 +2640,50 @@ collections:
             label: Text
             name: '-3e91794a'
             widget: string
+          - hint: 'Original text: Revestimientos con madera, key: -4eb262b'
+            label: Text
+            name: '-4eb262b'
+            widget: string
+          - hint: >-
+              Original text: Actualmente cubrir muros, techos o paredes con
+              madera genera una sensación cálida y moderna., key: 45c232db
+            label: Text
+            name: 45c232db
+            widget: text
+          - hint: >-
+              Original text: Contamos con la experiencia, marcas y los mejores
+              materiales para revestir cualquier proyecto., key: 3541ae04
+            label: Text
+            name: 3541ae04
+            widget: text
+          - hint: >-
+              Original text: Revestimientos de espacios con madera natural o
+              sintético, key: -3a2d684d
+            label: Text
+            name: '-3a2d684d'
+            widget: string
+          - hint: >-
+              Original text: Diseñamos y desarrollamos proyectos para recubrir
+              cualquier espacio con madera. Se pueden cubrir techos, fachadas,
+              muros interiores o exteriores. Contamos con amplia experiencia
+              desarrollando este tipo de proyectos para casas habitacionales,
+              proyectos comerciales, locales comerciales y todo tipo de proyecto
+              que lo requiera. Somos fabricantes y distribuidores de las mejores
+              marcas en recubrimientos de madera natural o sintética, así como
+              vigas de madera y sintéticas., key: -752a350b
+            label: Text
+            name: '-752a350b'
+            widget: text
+          - hint: >-
+              Original text: Contáctanos para conocer todo nuestro catálogo de
+              productos y servicios, key: -4d61917c
+            label: Text
+            name: '-4d61917c'
+            widget: string
+          - hint: 'Original text: Decks de madera, sintético y bambú, key: 1fca770c'
+            label: Text
+            name: 1fca770c
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -2673,17 +2728,25 @@ collections:
             label: Link
             name: 55e45e1b
             widget: string
-          - hint: 'Original link: /decks.html#deckmadera, key: 6cb061f2'
+          - hint: 'Original link: /decks/#deckmadera, key: -637fe9a4'
             label: Link
-            name: 6cb061f2
+            name: '-637fe9a4'
             widget: string
-          - hint: 'Original link: /decks.html#deckbambu, key: -70b638cd'
+          - hint: 'Original link: /decks/#deckbambu, key: -4e232277'
             label: Link
-            name: '-70b638cd'
+            name: '-4e232277'
             widget: string
-          - hint: 'Original link: /decks.html#decksintetico, key: 24640bbc'
+          - hint: 'Original link: /decks/#decksintetico, key: 380712'
             label: Link
-            name: 24640bbc
+            name: '380712'
+            widget: string
+          - hint: 'Original link: /decks/#revestimientos, key: 60fec55c'
+            label: Link
+            name: 60fec55c
+            widget: string
+          - hint: 'Original link: /revestimientos-de-madera, key: 297bf89f'
+            label: Link
+            name: 297bf89f
             widget: string
           - hint: 'Original link: /pisosdemadera, key: -6b750f0c'
             label: Link
@@ -2883,6 +2946,10 @@ collections:
           - hint: 'Original link: #decksdemadera, key: -6e365694'
             label: Link
             name: '-6e365694'
+            widget: string
+          - hint: 'Original link: #revestimientos, key: 7e44150'
+            label: Link
+            name: '7e44150'
             widget: string
       - label: Images
         name: images
@@ -3738,6 +3805,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: 5e53938f
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: 5794294a
             widget: object
             fields:
@@ -4454,6 +4534,19 @@ collections:
                 required: false
           - label: Image
             name: 2ebec603
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '0'
             widget: object
             fields:
               - name: url

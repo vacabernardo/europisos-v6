@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-page="609b09e44168f33946114c9d" data-wf-site="609b09e44168f33d25114c8c" lang="es-MX"><head>{%- seo seo -%}
+<html data-wf-page="61958814891a3908b48c86eb" data-wf-site="609b09e44168f33d25114c8c" lang="es-MX"><head>{%- seo seo -%}
   <meta charset="utf-8">
   
   
@@ -34,18 +34,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WXKJKD4');</script>
   <!--  End Google Tag Manager  -->
-  <meta name="keywords" content="marcas de maderas, marcas pisos de madera, marcas pergolas">
+  <meta name="keywords" content="pisos de madera">
 {{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<style>picture { border: 0;
         max-width: 100%;
         vertical-align: middle;
         display: inline-block; }</style></head>
 <body>
   {%- include "partials/menu" -%}
-  <div id="decksdemadera" class="section-proyectos wf-section">
-    <div class="container w-container">
-      <h1 class="heading-h1">{{ texts.3adae108 }}</h1>
-      <h2 class="heading-2">{{ texts.29a48eba }}</h2>
-      <p class="paragraph dark medium">{{ texts.-1a80352a }}</p>{%- image images.13c4cbba.url, images.13c4cbba.alt, '[{"max":10000,"size":"100vw"}]', '' -%}
+  <div class="banner-catalogo wf-section">
+    <div data-delay="3000" data-animation="cross" class="slider-catalogo-pisos-copy w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="1500" data-infinite="true">
+      <div class="contenedor-texto-banner-catalogo">
+        <div class="titulo-categoria-pisos w-container">
+          <h1 class="heading-h1 center light">{{ texts.-b5159a8 }}</h1>
+        </div>
+      </div>
+      <div class="w-slider-mask">
+        <div class="piso-banner-01 w-slide"></div>
+        <div class="piso-banner-02 w-slide"></div>
+        <div class="piso-banner-03 w-slide"></div>
+      </div>
+      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-left">
+        <div class="w-icon-slider-left"></div>
+      </div>
+      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-right">
+        <div class="w-icon-slider-right"></div>
+      </div>
+      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-nav w-round"></div>
+    </div>
+  </div>
+  <div class="section-categorias-catalogo wf-section">
+    {%- assign collection = collections.linea -%}<div class="w-dyn-list">
+      {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
+        {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
+          <h2 class="h2-small">{{ item.data.title }}</h2>
+          <a href="{{ item.url }}" class="boton w-button">{{ texts.-3e91794a }}</a>
+        </div>{%- endfor -%}
+      </div>{%- endunless -%}
+      {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+        <div>{{ texts.3d503d2b }}</div>
+      </div>{%- endif -%}
     </div>
   </div>
   {%- include "partials/footer" -%}

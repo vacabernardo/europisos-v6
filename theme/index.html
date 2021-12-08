@@ -44,25 +44,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         display: inline-block; }</style></head>
 <body>
   {%- include "partials/menu" -%}
-  <div class="section-header-1 wf-section">
-    <div data-delay="3500" data-animation="cross" class="slider-3 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="1500" data-infinite="true">
-      <div class="w-slider-mask">
-        <div class="pergolas-slider _00 w-slide"></div>
-        <div class="pergolas-slider _01 w-slide"></div>
-        <div class="pergolas-slider _02 w-slide"></div>
+  <div class="section-header-1-inicio wf-section">
+    <div class="header-relative-container">
+      <div data-delay="3500" data-animation="cross" class="slider-3 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="1500" data-infinite="true">
+        <div class="w-slider-mask">
+          <div class="pergolas-slider _00 w-slide"></div>
+          <div class="pergolas-slider _01 w-slide"></div>
+          <div class="pergolas-slider _02 w-slide"></div>
+        </div>
+        <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-left">
+          <div class="w-icon-slider-left"></div>
+        </div>
+        <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-right">
+          <div class="w-icon-slider-right"></div>
+        </div>
+        <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-nav w-round"></div>
       </div>
-      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-left">
-        <div class="w-icon-slider-left"></div>
-      </div>
-      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-arrow-right">
-        <div class="w-icon-slider-right"></div>
-      </div>
-      <div class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-nav w-round"></div>
-    </div>
-    <div class="div-heading-1">
-      <div class="w-container">
-        <h1 class="heading-h1-light">{{ texts.-6cdc9155 }}</h1>
-        <p class="paragraph-banner">{{ texts.-6df279ca }}</p>
+      <div class="div-heading-1">
+        <div class="contenedor-header-inicio w-container">
+          <h1 class="heading-h1-light">{{ texts.-6cdc9155 }}</h1>
+          <p class="paragraph-banner">{{ texts.-6df279ca }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -178,7 +180,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p class="paragraph center">{{ texts.-76e0009f }}</p>
       </div>
       <div class="div-50">
-        <div class="div-center">{%- image images.-3f932de.url, images.-3f932de.alt, '[{"max":411,"size":"95vw"},{"max":767,"size":"391px"},{"max":991,"size":"45vw"},{"max":10000,"size":"391px"}]', 'height="125" width="391"' -%}</div>
+        <div class="div-center">{%- image images.-3f932de.url, images.-3f932de.alt, '[{"max":411,"size":"95vw"},{"max":767,"size":"391px"},{"max":991,"size":"45vw"},{"max":10000,"size":"391px"}]', 'height="125" width="391" class="image-height-auto"' -%}</div>
         <h3 class="h3">{{ texts.-42635e28 }}</h3>
         <p class="paragraph center">{{ texts.-1fff5a95 }}</p>
       </div>
