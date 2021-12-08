@@ -6,19 +6,21 @@ slug: decks
 tags: pages
 seo:
   noindex: false
-  title: Decks de madera, Bambú y Eco Deck sintético de PVC y Resinas
+  title: Decks de madera, sintético y bambú
   description: >-
-    Decks para Terraza y Jardín. Ayudamos a seleccionar la mejor madera según
-    sus gustos. Expertos en instalación y mantenimiento correcto de su Deck.
-  og:title: Decks de madera, Bambú y Eco Deck sintético de PVC y Resinas
+    Diseño e instalación de decks de madera. Ayudamos a seleccionar la mejor
+    madera según sus gustos. Expertos en orrecta instalación y mantenimiento de
+    todo tipo de deck para exteriores
+  og:title: Decks de madera, sintético y bambú
   additional_tags: >-
-    <meta content="Decks para Terraza y Jardín. Ayudamos a seleccionar la mejor
-    madera según sus gustos. Expertos en instalación y mantenimiento correcto de
-    su Deck." property="og:description"><meta content="Decks para Terraza y
-    Jardín. Ayudamos a seleccionar la mejor madera según sus gustos. Expertos en
-    instalación y mantenimiento correcto de su Deck."
+    <meta content="Diseño e instalación de decks de madera. Ayudamos a
+    seleccionar la mejor madera según sus gustos. Expertos en orrecta
+    instalación y mantenimiento de todo tipo de deck para exteriores"
+    property="og:description"><meta content="Diseño e instalación de decks de
+    madera. Ayudamos a seleccionar la mejor madera según sus gustos. Expertos en
+    orrecta instalación y mantenimiento de todo tipo de deck para exteriores"
     property="twitter:description"><meta property="og:type" content="website">
-  twitter:title: Decks de madera, Bambú y Eco Deck sintético de PVC y Resinas
+  twitter:title: Decks de madera, sintético y bambú
 ---
 
 

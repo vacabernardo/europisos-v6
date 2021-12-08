@@ -6,12 +6,12 @@ slug: techos-y-cubiertas-para-pergolas
 tags: pages
 seo:
   noindex: false
-  title: Techos y cubiertas para Pérgolas en Guadalajara
+  title: Techos y cubiertas para pérgolas
   description: >-
     ¿Buscas una cubierta o techo para tu pérgola y terraza? Diferentes
     materiales para pérgolas: Policarbonato, Vidrio templado, Lona, Tela,
     Encapsulado Ixtle.
-  og:title: Techos y cubiertas para Pérgolas en Guadalajara
+  og:title: Techos y cubiertas para pérgolas
   additional_tags: >-
     <meta content="¿Buscas una cubierta o techo para tu pérgola y terraza?
     Diferentes materiales para pérgolas: Policarbonato, Vidrio templado, Lona,
@@ -19,7 +19,7 @@ seo:
     una cubierta o techo para tu pérgola y terraza? Diferentes materiales para
     pérgolas: Policarbonato, Vidrio templado, Lona, Tela, Encapsulado Ixtle."
     property="twitter:description"><meta property="og:type" content="website">
-  twitter:title: Techos y cubiertas para Pérgolas en Guadalajara
+  twitter:title: Techos y cubiertas para pérgolas
 ---
 
 

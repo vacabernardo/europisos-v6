@@ -1,7 +1,7 @@
 ---
 title: Lineas de pisos de madera
-permalink: pisosdemadera/{{ page.fileSlug }}/index.html
-layout: pisosdemadera/lineas.html
+permalink: '{{ page.fileSlug }}/index.html'
+layout: lineas.html
 slug: lineas
 tags: pages
 seo:
