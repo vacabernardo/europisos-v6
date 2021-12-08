@@ -4,6 +4,9 @@ created-on: 2021-10-07T16:11:27.799Z
 updated-on: 2021-10-07T16:11:27.820Z
 published-on: 2021-10-07T16:11:27.837Z
 f_categoria: cms/categoria/deck-sintetico.md
+f_foto-principal-de-producto:
+  url: /assets/images/alamere-pisovinilico.jpeg
+  alt: Piso vinílico tipo madera
 f_descripcion: >
   Los pisos de vinilo tienen una superficie 100% impermeable y gran  firmeza.
   Están confeccionados a partir de una tecnología avanzada que captura
