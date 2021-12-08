@@ -2951,6 +2951,10 @@ collections:
             label: Link
             name: '7e44150'
             widget: string
+          - hint: 'Original link: /revestimientos, key: 3e2d3c5c'
+            label: Link
+            name: 3e2d3c5c
+            widget: string
       - label: Images
         name: images
         file: cms/_data/images.json
