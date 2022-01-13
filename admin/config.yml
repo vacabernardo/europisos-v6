@@ -490,10 +490,6 @@ collections:
             label: Text
             name: '-7cd47973'
             widget: string
-          - hint: 'Original text: Revestimiento, key: -6f61b15a'
-            label: Text
-            name: '-6f61b15a'
-            widget: string
           - hint: 'Original text: Pisos de madera, key: -1dca6e3f'
             label: Text
             name: '-1dca6e3f'
@@ -513,6 +509,10 @@ collections:
           - hint: 'Original text: 33 1875 3858, key: -70c0b1fd'
             label: Text
             name: '-70c0b1fd'
+            widget: string
+          - hint: 'Original text: SERVICIOS, key: -657ae5c3'
+            label: Text
+            name: '-657ae5c3'
             widget: string
           - hint: >-
               Original text: Diseño de pérgolas, decks, pisos de madera, fibra
@@ -1036,11 +1036,9 @@ collections:
             label: Text
             name: 66f0678c
             widget: string
-          - hint: >-
-              Original text: Decks de madera, Deck sintético y Deck de bambú,
-              key: 1da09c6f
+          - hint: 'Original text: Decks de madera, sintético y bambú, key: 1fca770c'
             label: Text
-            name: 1da09c6f
+            name: 1fca770c
             widget: string
           - hint: >-
               Original text: Los pisos de Deck son una opción muy útil para
@@ -2632,14 +2630,6 @@ collections:
             label: Text
             name: '-18e9feb4'
             widget: string
-          - hint: 'Original text: Líneas de pisos de madera, key: -b5159a8'
-            label: Text
-            name: '-b5159a8'
-            widget: string
-          - hint: 'Original text: Ver productos, key: -3e91794a'
-            label: Text
-            name: '-3e91794a'
-            widget: string
           - hint: 'Original text: Revestimientos con madera, key: -4eb262b'
             label: Text
             name: '-4eb262b'
@@ -2680,9 +2670,13 @@ collections:
             label: Text
             name: '-4d61917c'
             widget: string
-          - hint: 'Original text: Decks de madera, sintético y bambú, key: 1fca770c'
+          - hint: 'Original text: Líneas de pisos de madera, key: -b5159a8'
             label: Text
-            name: 1fca770c
+            name: '-b5159a8'
+            widget: string
+          - hint: 'Original text: Ver productos, key: -3e91794a'
+            label: Text
+            name: '-3e91794a'
             widget: string
       - label: Links
         name: links
@@ -2744,13 +2738,13 @@ collections:
             label: Link
             name: 60fec55c
             widget: string
-          - hint: 'Original link: /revestimientos-de-madera, key: 297bf89f'
-            label: Link
-            name: 297bf89f
-            widget: string
           - hint: 'Original link: /pisosdemadera, key: -6b750f0c'
             label: Link
             name: '-6b750f0c'
+            widget: string
+          - hint: 'Original link: /revestimientos, key: 3e2d3c5c'
+            label: Link
+            name: 3e2d3c5c
             widget: string
           - hint: 'Original link: /fibra-de-vidrio/productos, key: -2c4698f7'
             label: Link
@@ -2915,10 +2909,6 @@ collections:
             label: Link
             name: 41e948c4
             widget: string
-          - hint: 'Original link: #productos, key: 2758d250'
-            label: Link
-            name: 2758d250
-            widget: string
           - hint: 'Original link: #encapsuladoixtle, key: -68f8d38a'
             label: Link
             name: '-68f8d38a'
@@ -2950,10 +2940,6 @@ collections:
           - hint: 'Original link: #revestimientos, key: 7e44150'
             label: Link
             name: '7e44150'
-            widget: string
-          - hint: 'Original link: /revestimientos, key: 3e2d3c5c'
-            label: Link
-            name: 3e2d3c5c
             widget: string
       - label: Images
         name: images
@@ -4538,19 +4524,6 @@ collections:
                 required: false
           - label: Image
             name: 2ebec603
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '0'
             widget: object
             fields:
               - name: url

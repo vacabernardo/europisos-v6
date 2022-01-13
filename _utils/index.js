@@ -18,6 +18,14 @@ module.exports = function (eleventyConfig) {
 
     registerShortcodes(eleventyConfig);
 
+    eleventyConfig.addNunjucksFilter("dateLastMod", function(value) {
+        try {
+            return value.toISOString();
+        } catch(e) {
+            return new Date().toISOString();
+        }
+     });
+
     eleventyConfig.on('afterBuild', async () => {
         await addFilesToFunctions();
     });
