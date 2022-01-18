@@ -6,6 +6,8 @@ const addFilesToFunctions = require('./zip')
 
 module.exports = function (eleventyConfig) {
 
+    eleventyConfig.setQuietMode(true);
+
     eleventyConfig.setLiquidOptions({
         dynamicPartials: true,
     });

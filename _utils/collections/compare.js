@@ -47,20 +47,40 @@ const operators = {
         }
     },
     "in": (itemValue, value) => {
-        return itemValue.includes(value);
+        if (Array.isArray(value)) {
+            if (value.length == 0 || itemValue.length == 0) {
+                return false;
+            }
+            return value.some( v => itemValue.includes(v));
+        } else {
+            if (!itemValue || !value) {
+                return false;
+            }
+            return itemValue.includes(value);
+        }
     },
     "nin": (itemValue, value) => {
-        return !itemValue.includes(value);
+        return !operators["in"](itemValue, value);
     },
     "idin": (itemValue, value) => {
-        return itemValue.includes(value);
+        if (Array.isArray(value)) {
+            if (value.length == 0 || itemValue.length == 0) {
+                return false;
+            }
+            return value.some( v => itemValue.includes(v));
+        } else {
+            if (!itemValue || !value) {
+                return false;
+            }
+            return itemValue.includes(value);
+        }
     },
     "idnin": (itemValue, value) => {
-        return !itemValue.includes(value);
+        return !operators["idin"](itemValue, value);
     }
 }
 
-module.exports = function compareItemByFilter(item, filter) {
+module.exports = function compareItemByFilter(item, filter, currentItem) {
     let [fieldPath, operator, value] = filter;
     const itemValue = get(item.data, fieldPath, "");
 
@@ -68,14 +88,43 @@ module.exports = function compareItemByFilter(item, filter) {
         value = value.replace("cms/cms/", "cms/")
     }
 
-    if (fieldPath == "slug" && value.startsWith("cms/")) {
+    if (value.includes("DYN_CONTEXT_FIELD")) {
+        const [_, field] = value.split(":");
+
+        if (currentItem) {
+            value = get(currentItem.data, field, "");
+        }
+
+    } else if (value.includes("DYN_CONTEXT")) {
+        if (currentItem) {
+            value = currentItem.inputPath.replace("./", "");
+        }
+    }
+
+
+    if (fieldPath == "slug" && typeof value == "string" && value.startsWith("cms/")) {
         value = value.split('/')
-        value = value[value.length-1].replace('.md', '');
+        value = value[value.length - 1].replace('.md', '');
         value = value.replace(";", "")
     }
 
-    if (value.toString().includes('.md')) {
+    if (typeof value == "string" && value.toString().includes('.md')) {
         value = value.substring(0, value.indexOf('.md') + 3);
+    }
+
+    if (Array.isArray(value)) {
+        value = value.map(v => {
+            if (fieldPath == "slug" && typeof v == "string" && v.startsWith("cms/")) {
+                v = v.split('/')
+                v = v[v.length - 1].replace('.md', '');
+                v = v.replace(";", "")
+            }
+
+            if (typeof v == "string" && v.toString().includes('.md')) {
+                v = v.substring(0, v.indexOf('.md') + 3);
+            }
+            return v;
+        });
     }
 
 
@@ -87,12 +136,16 @@ module.exports = function compareItemByFilter(item, filter) {
         value = false;
     }
 
+
+    
+
     if (operators[operator]) {
         try {
-            return operators[operator](itemValue, value);
+            const result = operators[operator](itemValue, value);
+            return result;
         } catch (e) {
-            return true;
+            return false;
         }
     }
-    return true;
+    return false;
 }

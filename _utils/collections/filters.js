@@ -37,23 +37,18 @@ module.exports = {
         }
         filterFor = filterFor || "ALL";
         inputPath = inputPath.replace('./', '');
-        const currentItem = array.find( i => i.inputPath && i.inputPath == "./" + inputPath)
+        let currentItem = findByInputPath(inputPath);
         
         if (fields.includes('DYN_CONTEXT_FIELD') && !fields.includes(";")) {
             fields+="; "
         }
 
-        const filters = fields.replace(/DYN_CONTEXT_FIELD:(.*?);/gm, function(value, match) {
-            if (currentItem && currentItem.data && currentItem.data[match]) {
-                return currentItem.data[match] + ";"
-            }
-            return value;
-        }).replace(/DYN_CONTEXT/gm, inputPath).split("; ").map(f => f.split(",")).filter( el => el.length === 3);
+        const filters = fields.split("; ").map(f => f.split(",")).filter( el => el.length === 3);
 
         if (filterFor === "ALL") {
-            return array.filter((item) => filters.every((filter) => compareItemByFilter(item,filter)))
+            return array.filter((item) => filters.every((filter) => compareItemByFilter(item,filter, currentItem)))
         } else {
-            return array.filter((item) => filters.some((filter) => compareItemByFilter(item,filter)))
+            return array.filter((item) => filters.some((filter) => compareItemByFilter(item,filter, currentItem)))
         }
     }
 }

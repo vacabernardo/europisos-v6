@@ -567,10 +567,10 @@ collections:
             name: '-49342ec'
             widget: string
           - hint: >-
-              Original text: Diseño e instalación de Decks de madera y
-              sintético, key: -7c11f316
+              Original text: Diseño e instalación de decks de madera y sintético
+              de WPVC, key: -5ede9991
             label: Text
-            name: '-7c11f316'
+            name: '-5ede9991'
             widget: string
           - hint: >-
               Original text: Diseño e instalación de Pisos de madera, key:
@@ -1012,9 +1012,9 @@ collections:
             label: Text
             name: 5401eebe
             widget: string
-          - hint: 'Original text: 33 1181 6975, key: -19d4b238'
+          - hint: 'Original text: 33 3901 8920, key: -59735f28'
             label: Text
-            name: '-19d4b238'
+            name: '-59735f28'
             widget: string
           - hint: 'Original text: Oficinas generales:, key: -79ad9a64'
             label: Text
@@ -1032,13 +1032,19 @@ collections:
             label: Text
             name: '-6a311f37'
             widget: string
+          - hint: 'Original text: 33 1181 6975, key: -19d4b238'
+            label: Text
+            name: '-19d4b238'
+            widget: string
           - hint: 'Original text: eduardo@europisosdemaderaydecks.com, key: 66f0678c'
             label: Text
             name: 66f0678c
             widget: string
-          - hint: 'Original text: Decks de madera, sintético y bambú, key: 1fca770c'
+          - hint: >-
+              Original text: Decks de madera, sintético PVC y bambú, key:
+              14c22e69
             label: Text
-            name: 1fca770c
+            name: 14c22e69
             widget: string
           - hint: >-
               Original text: Los pisos de Deck son una opción muy útil para
@@ -1104,9 +1110,9 @@ collections:
             label: Text
             name: 358cb25b
             widget: string
-          - hint: 'Original text: Deck sintético, key: -64ea79a9'
+          - hint: 'Original text: Deck sintético PVC, key: 6dbc45b4'
             label: Text
-            name: '-64ea79a9'
+            name: 6dbc45b4
             widget: string
           - hint: 'Original text: Deck de madera, key: 19f287ec'
             label: Text
@@ -1229,15 +1235,19 @@ collections:
             label: Text
             name: '-4b659361'
             widget: text
+          - hint: 'Original text: Deck sintético PVC o WPVC, key: -1b34fbd'
+            label: Text
+            name: '-1b34fbd'
+            widget: string
           - hint: >-
-              Original text: Los decks sintéticos son una alternativa al deck de
-              madera. Son una excelente opción pues evitan gastos en
+              Original text: Los decks sintéticos de PVC son una alternativa al
+              deck de madera. Son una excelente opción pues evitan gastos en
               mantenimiento por ser materiales de gran calidad y sustentables.
               Están hechos de fibras naturales, polietileno y otros plásticos
               que constituyen un material firme, durable, absorbente a humedades
-              y termitas y de poco mantenimiento., key: 3effcf36
+              y termitas y de poco mantenimiento., key: 747d677e
             label: Text
-            name: 3effcf36
+            name: 747d677e
             widget: text
           - hint: >-
               Original text: Los materiales sintéticos duran por mucho tiempo y
@@ -2129,6 +2139,10 @@ collections:
             label: Text
             name: 3d64bebf
             widget: string
+          - hint: 'Original text: Deck sintético, key: -64ea79a9'
+            label: Text
+            name: '-64ea79a9'
+            widget: string
           - hint: 'Original text: Portafolio de proyectos, key: 3f6800a6'
             label: Text
             name: 3f6800a6
@@ -2626,6 +2640,14 @@ collections:
             label: Text
             name: 45bda1c
             widget: string
+          - hint: 'Original text: Líneas de pisos de madera, key: -b5159a8'
+            label: Text
+            name: '-b5159a8'
+            widget: string
+          - hint: 'Original text: Ver productos, key: -3e91794a'
+            label: Text
+            name: '-3e91794a'
+            widget: string
           - hint: "Original text: LINEA\_DE\_PRODUCTO, key: -18e9feb4"
             label: Text
             name: '-18e9feb4'
@@ -2669,14 +2691,6 @@ collections:
               productos y servicios, key: -4d61917c
             label: Text
             name: '-4d61917c'
-            widget: string
-          - hint: 'Original text: Líneas de pisos de madera, key: -b5159a8'
-            label: Text
-            name: '-b5159a8'
-            widget: string
-          - hint: 'Original text: Ver productos, key: -3e91794a'
-            label: Text
-            name: '-3e91794a'
             widget: string
       - label: Links
         name: links
