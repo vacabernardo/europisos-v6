@@ -38,7 +38,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<style>picture { border: 0;
         max-width: 100%;
         vertical-align: middle;
-        display: inline-block; }</style></head>
+        display: inline-block; }</style>
+        <script>
+function validateRecaptcha() {
+    var response = grecaptcha.getResponse();
+    if (response.length === 0) {
+        alert("Validar formulario No soy un Robot");
+        return false;
+    } 
+}
+</script>
+        </head>
 <body>
   {%- include "partials/menu" -%}
   <div id="decksdemadera" class="section-contacto wf-section">
