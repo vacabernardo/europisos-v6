@@ -990,11 +990,9 @@ collections:
             label: Text
             name: '-15f69c'
             widget: string
-          - hint: >-
-              Original text: Thank you! Your submission has been received!, key:
-              5a0ea5a1
+          - hint: 'Original text: Muchas gracias, key: -6065ad13'
             label: Text
-            name: 5a0ea5a1
+            name: '-6065ad13'
             widget: string
           - hint: >-
               Original text: Oops! Something went wrong while submitting the
@@ -1383,10 +1381,6 @@ collections:
           - hint: 'Original text: Mensaje:, key: -2038caa5'
             label: Text
             name: '-2038caa5'
-            widget: string
-          - hint: 'Original text: Muchas gracias, key: -6065ad13'
-            label: Text
-            name: '-6065ad13'
             widget: string
           - hint: 'Original text: Solicitar información, key: -72aeb621'
             label: Text
@@ -2143,6 +2137,72 @@ collections:
             label: Text
             name: '-64ea79a9'
             widget: string
+          - hint: >-
+              Original text: Producción, instalación y mantenimiento de piezas
+              de fibra de vidrio para la construcción y decoración, residencial,
+              hotelera y de servicios. Diseños a la medida., key: 14ead907
+            label: Text
+            name: 14ead907
+            widget: text
+          - hint: >-
+              Original text: Ofrecemos los mejores precios del mercado., key:
+              7231e7bb
+            label: Text
+            name: 7231e7bb
+            widget: string
+          - hint: 'Original text: Garantía de calidad., key: 617cac04'
+            label: Text
+            name: 617cac04
+            widget: string
+          - hint: 'Original text: Productos y servicios >, key: 3fd8b3a7'
+            label: Text
+            name: 3fd8b3a7
+            widget: string
+          - hint: >-
+              Original text: Durabilidad, resistencia, ligereza y economía, key:
+              -5f600124
+            label: Text
+            name: '-5f600124'
+            widget: string
+          - hint: >-
+              Original text: Los productos fabricados en fibra de vidrio y
+              resinas son muy solicitados por su durabilidad en ambientes
+              agresivos, por su bajo mantenimiento y estética., key: -61050693
+            label: Text
+            name: '-61050693'
+            widget: text
+          - hint: >-
+              Original text: Nuestros diseños innovadores crean espacios únicos.
+              La fibra de vidrio es un excelente material para proyectos
+              arquitectónicos., key: -740f8bc4
+            label: Text
+            name: '-740f8bc4'
+            widget: text
+          - hint: >-
+              Original text: Manufacturamos estructuras especiales, diseños
+              únicos como esculturas y piezas para ambientan espacios., key:
+              194ac239
+            label: Text
+            name: 194ac239
+            widget: text
+          - hint: >-
+              Original text: Realizamos todo tipo de piezas únicas con fibra de
+              vidrio. Somos fabricantes y podemos hacer cualquier diseño a la
+              medida., key: 5d63d212
+            label: Text
+            name: 5d63d212
+            widget: text
+          - hint: >-
+              Original text: Contamos con un amplio catálogo en sillas, bancas y
+              elementos decorativos para espacios al aire libre que requieren
+              durabilidad y poco mantenimiento., key: 95ba8ab
+            label: Text
+            name: 95ba8ab
+            widget: text
+          - hint: 'Original text: Solicitar informes, key: 29102491'
+            label: Text
+            name: '29102491'
+            widget: string
           - hint: 'Original text: Portafolio de proyectos, key: 3f6800a6'
             label: Text
             name: 3f6800a6
@@ -2209,72 +2269,6 @@ collections:
               -6036b884
             label: Text
             name: '-6036b884'
-            widget: string
-          - hint: >-
-              Original text: Producción, instalación y mantenimiento de piezas
-              de fibra de vidrio para la construcción y decoración, residencial,
-              hotelera y de servicios. Diseños a la medida., key: 14ead907
-            label: Text
-            name: 14ead907
-            widget: text
-          - hint: >-
-              Original text: Ofrecemos los mejores precios del mercado., key:
-              7231e7bb
-            label: Text
-            name: 7231e7bb
-            widget: string
-          - hint: 'Original text: Garantía de calidad., key: 617cac04'
-            label: Text
-            name: 617cac04
-            widget: string
-          - hint: 'Original text: Productos y servicios >, key: 3fd8b3a7'
-            label: Text
-            name: 3fd8b3a7
-            widget: string
-          - hint: >-
-              Original text: Durabilidad, resistencia, ligereza y economía, key:
-              -5f600124
-            label: Text
-            name: '-5f600124'
-            widget: string
-          - hint: >-
-              Original text: Los productos fabricados en fibra de vidrio y
-              resinas son muy solicitados por su durabilidad en ambientes
-              agresivos, por su bajo mantenimiento y estética., key: -61050693
-            label: Text
-            name: '-61050693'
-            widget: text
-          - hint: >-
-              Original text: Nuestros diseños innovadores crean espacios únicos.
-              La fibra de vidrio es un excelente material para proyectos
-              arquitectónicos., key: -740f8bc4
-            label: Text
-            name: '-740f8bc4'
-            widget: text
-          - hint: >-
-              Original text: Manufacturamos estructuras especiales, diseños
-              únicos como esculturas y piezas para ambientan espacios., key:
-              194ac239
-            label: Text
-            name: 194ac239
-            widget: text
-          - hint: >-
-              Original text: Realizamos todo tipo de piezas únicas con fibra de
-              vidrio. Somos fabricantes y podemos hacer cualquier diseño a la
-              medida., key: 5d63d212
-            label: Text
-            name: 5d63d212
-            widget: text
-          - hint: >-
-              Original text: Contamos con un amplio catálogo en sillas, bancas y
-              elementos decorativos para espacios al aire libre que requieren
-              durabilidad y poco mantenimiento., key: 95ba8ab
-            label: Text
-            name: 95ba8ab
-            widget: text
-          - hint: 'Original text: Solicitar informes, key: 29102491'
-            label: Text
-            name: '29102491'
             widget: string
           - hint: >-
               Original text: Diseño y construcción de Saunas de Madera, key:
@@ -2640,6 +2634,10 @@ collections:
             label: Text
             name: 45bda1c
             widget: string
+          - hint: "Original text: LINEA\_DE\_PRODUCTO, key: -18e9feb4"
+            label: Text
+            name: '-18e9feb4'
+            widget: string
           - hint: 'Original text: Líneas de pisos de madera, key: -b5159a8'
             label: Text
             name: '-b5159a8'
@@ -2647,10 +2645,6 @@ collections:
           - hint: 'Original text: Ver productos, key: -3e91794a'
             label: Text
             name: '-3e91794a'
-            widget: string
-          - hint: "Original text: LINEA\_DE\_PRODUCTO, key: -18e9feb4"
-            label: Text
-            name: '-18e9feb4'
             widget: string
           - hint: 'Original text: Revestimientos con madera, key: -4eb262b'
             label: Text
