@@ -63,14 +63,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
         <h2 class="heading-solicitar-cotizaci-n">{{ texts.1cd7f23b }}</h2>
-        <div class="formulario-piso w-form">
-          <form id="wf-form-Formulario" name="wf-form-Formulario" data-name="ulario" action="https://formbucket.com/f/buk_uRnr7tu3J7L3wtpeDRC9Ocy6" method="post" class="form-asesoria" data-ajax="true">
+        <div no-ajax="true" class="formulario-piso w-form">
+          <form id="wf-form-Formulario" name="wf-form-Formulario" data-name="ulario" action="https://formbucket.com/f/buk_CmvIDiUbZcB7Ad7m8bWap0Vc" method="post" class="form-asesoria">
             <div id="w-node-_70786581-a769-fe2c-77a7-e8e41c16a577-e2114c95"><label for="Nombre-2" class="field-label-2">{{ texts.-1e41be8f }}</label><input type="text" class="text-field-2 w-input" maxlength="256" name="Nombre-2" data-name="Nombre 2" placeholder="" id="Nombre-2" required=""></div>
             <div id="w-node-_70786581-a769-fe2c-77a7-e8e41c16a57b-e2114c95"><label for="Correo" class="field-label-2">{{ texts.7708558d }}</label><input type="email" class="text-field-2 w-input" maxlength="256" name="Correo" data-name="Correo" placeholder="" id="Correo" required=""></div>
             <div id="w-node-_70786581-a769-fe2c-77a7-e8e41c16a57f-e2114c95"><label for="Telefono" class="field-label-2">{{ texts.-24e37236 }}<span class="_10-digitos"></span>{{ texts.3a }}</label><input type="tel" class="text-field-2 w-input" maxlength="256" name="Telefono" data-name="Telefono" placeholder="" id="Telefono" required=""></div>
             <div id="w-node-_70786581-a769-fe2c-77a7-e8e41c16a586-e2114c95"><label for="Ciudad" class="field-label-2">{{ texts.-6df1f93e }}</label><input type="text" class="text-field-2 w-input" maxlength="256" name="Ciudad-2" data-name="Ciudad 2" placeholder="" id="Ciudad-2" required=""></div>
-            <div id="w-node-_70786581-a769-fe2c-77a7-e8e41c16a58a-e2114c95"><label for="Metros-a-cubrir" class="field-label-2">{{ texts.2bab852e }}</label><input type="text" class="text-field-2 w-input" maxlength="256" name="Metros-a-cubrir-2" data-name="Metros A Cubrir 2" placeholder="" id="Metros-a-cubrir-2"><label for="Mensaje" class="field-label-2">{{ texts.-2038caa5 }}</label><textarea data-name="Mensaje 2" maxlength="5000" id="Mensaje-2" name="Mensaje-2" placeholder="" class="text-field-2 w-input"></textarea>
+            <div id="w-node-_70786581-a769-fe2c-77a7-e8e41c16a58a-e2114c95"><label for="Metros-a-cubrir" class="field-label-2">{{ texts.2bab852e }}</label><input type="text" class="text-field-2 w-input" maxlength="256" name="Metros-a-cubrir-2" data-name="Metros A Cubrir 2" placeholder="" id="Metros-a-cubrir-2"><label for="Mensaje-2" class="field-label-2">{{ texts.-2038caa5 }}</label><textarea id="Mensaje-2" name="Mensaje-2" maxlength="5000" data-name="Mensaje 2" placeholder="" class="text-field-2 w-input"></textarea>
               <div class="w-embed"><input type="hidden" id="url" name="url" value=""></div>
+              <div class="embed-recaptcha">
+                <div class="html-embed w-embed w-script">
+                  <div class="g-recaptcha" data-sitekey="6LfZp9wUAAAAAElN6hjxGC8JFb3-WClC5dZnz7dZ"></div>
+                  <script>
+function validateRecaptcha() {
+    var response = grecaptcha.getResponse();
+    if (response.length === 0) {
+        alert("Validar formulario No soy un Robot");
+        return false;
+    } 
+}
+</script>
+                </div>
+              </div>
             </div><input type="submit" value="Solicitar cotización" data-wait="Un momento..." id="w-node-_70786581-a769-fe2c-77a7-e8e41c16a592-e2114c95" class="boton-2 w-button">
           </form>
           <div class="w-form-done">
