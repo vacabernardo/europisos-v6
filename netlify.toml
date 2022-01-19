@@ -5,6 +5,6 @@ functions = "functions"
 
 [[redirects]]
   from = "/api/*"
-  to = "/.netlify/functions/:splat"
+  to = "https://formbucket.com/:splat"
   status = 200
   force = true
