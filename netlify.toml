@@ -10,8 +10,8 @@ functions = "functions"
   force = true
 
 [[redirects]]
-  from = "/*"
-  to = "https://formbucket.com/:splat"
+  from = "ttps://api.formbucket.com/f/buk_CmvIDiUbZcB7Ad7m8bWap0Vc"
+  to = "/gracias"
   status = 200
   force = true
 
