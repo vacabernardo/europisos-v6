@@ -1,6 +1,5 @@
 ---
 created-on: '2021-02-09T18:23:28.577Z'
-f_deck: false
 title: Pisos vinílicos
 slug: pisos-vinilicos
 f_descripcion: >-

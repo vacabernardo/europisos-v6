@@ -10,7 +10,7 @@ functions = "functions"
   force = true
 
 [[redirects]]
-  from = "/api/*"
+  from = "/*"
   to = "https://formbucket.com/:splat"
   status = 200
   force = true

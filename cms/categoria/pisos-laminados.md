@@ -1,6 +1,5 @@
 ---
 created-on: '2021-02-09T18:23:02.614Z'
-f_deck: false
 title: Pisos laminados
 slug: pisos-laminados
 f_descripcion: >-
