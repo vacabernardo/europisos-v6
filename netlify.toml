@@ -9,6 +9,12 @@ functions = "functions"
   status = 200
   force = true
 
+[[redirects]]
+  from = "https://formbucket.com/f/buk_CmvIDiUbZcB7Ad7m8bWap0Vc"
+  to = "https://www.europisosdemaderaydecks.com/gracias/"
+  status = 200
+  force = true
+
 [[headers]]
     for = "/*"
     [headers.values]
