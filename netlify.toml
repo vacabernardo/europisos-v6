@@ -8,14 +8,3 @@ functions = "functions"
   to = "/.netlify/functions/:splat"
   status = 200
   force = true
-
-[[redirects]]
-  from = "ttps://api.formbucket.com/f/buk_CmvIDiUbZcB7Ad7m8bWap0Vc"
-  to = "/gracias"
-  status = 200
-  force = true
-
-  [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
