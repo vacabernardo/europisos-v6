@@ -134,63 +134,71 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
   <div class="section-categorias-catalogo">
-    {%- assign collection = collections.categoria | filter: "f_deck,ne,true", "ALL", page.inputPath | sort: "-created-on" -%}<div class="w-dyn-list">
-      {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
-        {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
-          <a href="{{ item.url }}" class="link-block-5link-block-5 w-inline-block">{%- image item.data.f_imagen.url, item.data.f_imagen.alt, '[{"max":479,"size":"200px"},{"max":767,"size":"46vw"},{"max":991,"size":"47vw"},{"max":10000,"size":"31vw"}]', 'loading="lazy" class="imagen-boton-cat-piso"' -%}</a>
-          <h2 class="h2-small">{{ item.data.title }}</h2>
-          <p class="paragraph dark small center">{{ item.data.f_descripcion }}</p>
-          <a href="{{ item.url }}" class="boton hide w-button">{{ texts.-72aeb621 }}</a>
-          <a href="{{ item.url }}" class="boton w-button">{{ texts.-50fd480d }}</a>
-        </div>{%- endfor -%}
-      </div>{%- endunless -%}
-      {%- if collection.length == 0 -%}<div class="w-dyn-empty">
-        <div>{{ texts.3d503d2b }}</div>
-      </div>{%- endif -%}
+    <div class="padding-global">
+      <div class="container-large">
+        {%- assign collection = collections.categoria | filter: "f_deck,ne,true", "ALL", page.inputPath | sort: "-created-on" -%}<div class="w-dyn-list">
+          {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo w-dyn-items">
+            {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-catalogo w-dyn-item">
+              <a href="{{ item.url }}" class="link-block-5link-block-5 w-inline-block">{%- image item.data.f_imagen.url, item.data.f_imagen.alt, '[{"max":479,"size":"200px"},{"max":767,"size":"46vw"},{"max":991,"size":"47vw"},{"max":10000,"size":"31vw"}]', 'loading="lazy" class="imagen-boton-cat-piso"' -%}</a>
+              <h2 class="h2-small">{{ item.data.title }}</h2>
+              <p class="paragraph dark small center">{{ item.data.f_descripcion }}</p>
+              <a href="{{ item.url }}" class="boton hide w-button">{{ texts.-72aeb621 }}</a>
+              <a href="{{ item.url }}" class="boton w-button">{{ texts.-50fd480d }}</a>
+            </div>{%- endfor -%}
+          </div>{%- endunless -%}
+          {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+            <div>{{ texts.3d503d2b }}</div>
+          </div>{%- endif -%}
+        </div>
+      </div>
     </div>
   </div>
   <div class="section-categorias-catalogo">
-    <div>
-      <div class="container-2 w-container">
-        <h1 class="heading-2 center">{{ texts.-6f5be135 }}</h1>
-        <p class="paragraph dark big center">{{ texts.3d64bebf }}</p>
-      </div>
-    </div>
-    <div class="div-horizontal-tarjetas">
-      <div class="tarjeta-imagen-cuadrada">
-        <a href="{{ links.23 }}" class="link-block-rectangular w-inline-block">
-          <div class="imagen-boton-rectangular"></div>
-          <div class="descripcion-link">{{ texts.1d7e72ad }}</div>
-        </a>
-        <div class="div-center-vertical">
-          <a href="{{ links.23 }}" class="link-block-tarjeta w-inline-block">
-            <h2 class="h2-small">{{ texts.-1ca88bf4 }}</h2>
-          </a>
-          <a href="{{ links.66a76574 }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+    <div class="padding-global">
+      <div class="container-large">
+        <div>
+          <div class="container-2 w-container">
+            <h1 class="heading-2 center">{{ texts.-6f5be135 }}</h1>
+            <p class="paragraph dark big center">{{ texts.3d64bebf }}</p>
+          </div>
         </div>
-      </div>
-      <div class="tarjeta-imagen-cuadrada">
-        <a href="{{ links.23 }}" class="link-block-rectangular w-inline-block">
-          <div class="imagen-boton-rectangular bambu"></div>
-          <div class="descripcion-link">{{ texts.4269339d }}</div>
-        </a>
-        <div class="div-center-vertical">
-          <a href="{{ links.23 }}" class="link-block-tarjeta w-inline-block">
-            <h2 class="h2-small">{{ texts.48cb0a5e }}</h2>
-          </a>
-          <a href="{{ links.66a76574 }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
-        </div>
-      </div>
-      <div class="tarjeta-imagen-cuadrada">
-        <a href="{{ links.23 }}" class="link-block-rectangular w-inline-block">
-          <div class="imagen-boton-rectangular decksintetico"></div>
-          <div class="descripcion-link">{{ texts.358cb25b }}</div>
-        </a>
-        <div class="div-center-vertical">
-          <a href="{{ links.23 }}" class="link-block-tarjeta w-inline-block">
-            <h2 class="h2-small">{{ texts.-64ea79a9 }}</h2>
-          </a>
-          <a href="{{ links.66a76574 }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+        <div class="div-horizontal-tarjetas">
+          <div class="tarjeta-imagen-cuadrada">
+            <a href="{{ links.23 }}" class="link-block-rectangular w-inline-block">
+              <div class="imagen-boton-rectangular"></div>
+              <div class="descripcion-link">{{ texts.1d7e72ad }}</div>
+            </a>
+            <div class="div-center-vertical">
+              <a href="{{ links.23 }}" class="link-block-tarjeta w-inline-block">
+                <h2 class="h2-small">{{ texts.-1ca88bf4 }}</h2>
+              </a>
+              <a href="{{ links.66a76574 }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+            </div>
+          </div>
+          <div class="tarjeta-imagen-cuadrada">
+            <a href="{{ links.23 }}" class="link-block-rectangular w-inline-block">
+              <div class="imagen-boton-rectangular bambu"></div>
+              <div class="descripcion-link">{{ texts.4269339d }}</div>
+            </a>
+            <div class="div-center-vertical">
+              <a href="{{ links.23 }}" class="link-block-tarjeta w-inline-block">
+                <h2 class="h2-small">{{ texts.48cb0a5e }}</h2>
+              </a>
+              <a href="{{ links.66a76574 }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+            </div>
+          </div>
+          <div class="tarjeta-imagen-cuadrada">
+            <a href="{{ links.23 }}" class="link-block-rectangular w-inline-block">
+              <div class="imagen-boton-rectangular decksintetico"></div>
+              <div class="descripcion-link">{{ texts.358cb25b }}</div>
+            </a>
+            <div class="div-center-vertical">
+              <a href="{{ links.23 }}" class="link-block-tarjeta w-inline-block">
+                <h2 class="h2-small">{{ texts.-64ea79a9 }}</h2>
+              </a>
+              <a href="{{ links.66a76574 }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
