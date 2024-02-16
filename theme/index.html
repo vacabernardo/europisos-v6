@@ -419,16 +419,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
     </div>
-    <div class="collection-list-wrapper-categoria w-dyn-list">
-      <div role="list" class="contenedor-catalogo catalogo-full w-dyn-items">
-        <div role="listitem" class="contenedor-categoria-piso contenedor-categoria-piso_small w-dyn-item">
-          <a href="{{ links.-824a8b9 }}" class="link-block-piso w-inline-block"></a>
-          <h2 class="h2-small"></h2>
-          <a href="{{ links.-32cd245 }}" class="boton w-button">{{ texts.-1fb180bc }}</a>
-        </div>
-      </div>
-      <div class="empty-state-2 w-dyn-empty">
-        <div>{{ texts.-6a49d39f }}</div>
+    <div class="hide">
+      {%- assign collection = collections.pisos | sort: "-created-on" -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+        {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo-full w-dyn-items">
+          {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso contenedor-categoria-piso_small w-dyn-item">
+            <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
+            <h2 class="h2-small">{{ item.data.title }}</h2>
+            <a href="{{ links.-32cd245 }}" class="boton w-button">{{ texts.-1fb180bc }}</a>
+          </div>{%- endfor -%}
+        </div>{%- endunless -%}
+        {%- if collection.length == 0 -%}<div class="empty-state-2 w-dyn-empty">
+          <div>{{ texts.-6a49d39f }}</div>
+        </div>{%- endif -%}
       </div>
     </div>
   </div>

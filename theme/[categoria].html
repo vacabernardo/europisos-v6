@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html data-wf-page="609b09e44168f35eed114c94" data-wf-site="609b09e44168f33d25114c8c" lang="es-MX"><head>
   <meta charset="utf-8">
-  <title>Catálogo de pisos de madera - Europisos </title>
+  <title>Catálogo {{ title }} - Europisos</title>
+  <meta content="{{ f_descripcion | escape }}" name="description">
+  <meta content="Catálogo {{ title }} - Europisos" property="og:title">
+  <meta content="{{ f_descripcion | escape }}" property="og:description">
+  <meta content="{{ f_imagen.url | escape }}" property="og:image">
+  <meta content="Catálogo {{ title }} - Europisos" property="twitter:title">
+  <meta content="{{ f_descripcion | escape }}" property="twitter:description">
+  <meta content="{{ f_imagen.url | escape }}" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/components.css" rel="stylesheet" type="text/css">
@@ -28,7 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WXKJKD4');</script>
   <!--  End Google Tag Manager  -->
-{{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<meta property="og:title" content="Copy of Europisos v2 (sin fibra de vidrio macetas)"><meta property="twitter:title" content="Copy of Europisos v2 (sin fibra de vidrio macetas)"><style>.w-video.w-embed {
+{{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<style>.w-video.w-embed {
             aspect-ratio: 16 / 9;
         }</style><style>picture { border: 0;
         max-width: 100%;
@@ -121,21 +130,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <div class="w-tab-content">
           <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
-            <div class="collection-list-wrapper-categoria w-dyn-list">
-              <div role="list" class="contenedor-catalogo catalogo w-dyn-items">
-                <div role="listitem" class="contenedor-categoria-piso w-dyn-item">
-                  <a href="{{ links.-824a8b9 }}" class="link-block-piso w-inline-block"></a>
-                  <h2 class="h2-small"></h2>
-                  <a href="{{ links.23 }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
-                </div>
-              </div>
-              <div class="empty-state-2 w-dyn-empty">
+            {%- assign collection = collections.pisos | sort: "-created-on" -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+              {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
+                {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
+                  <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
+                  <h2 class="h2-small">{{ item.data.title }}</h2>
+                  <a href="{{ item.url }}" class="boton w-button">{{ texts.1b4c8cf8 }}</a>
+                </div>{%- endfor -%}
+              </div>{%- endunless -%}
+              {%- if collection.length == 0 -%}<div class="empty-state-2 w-dyn-empty">
                 <div>{{ texts.-6a49d39f }}</div>
-              </div>
+              </div>{%- endif -%}
             </div>
           </div>
           <div data-w-tab="Tab 2" class="w-tab-pane">
-            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT; f_precio,eq,Básico", "ALL", page.inputPath | sort: "-created-on" -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+            {%- assign collection = collections.pisos | filter: "f_precio,eq,Básico", "ALL", page.inputPath | sort: "-created-on" -%}<div class="collection-list-wrapper-categoria w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
                   <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
@@ -149,7 +158,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
           </div>
           <div data-w-tab="Tab 3" class="w-tab-pane">
-            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT; f_precio,eq,Estandar", "ALL", page.inputPath | sort: "-created-on" -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+            {%- assign collection = collections.pisos | filter: "f_precio,eq,Estandar", "ALL", page.inputPath | sort: "-created-on" -%}<div class="collection-list-wrapper-categoria w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
                   <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
@@ -163,7 +172,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
           </div>
           <div data-w-tab="Tab 4" class="w-tab-pane">
-            {%- assign collection = collections.pisos | filter: "f_categoria,eq,DYN_CONTEXT; f_precio,eq,Premium", "ALL", page.inputPath | sort: "-created-on" -%}<div class="collection-list-wrapper-categoria w-dyn-list">
+            {%- assign collection = collections.pisos | filter: "f_precio,eq,Premium", "ALL", page.inputPath | sort: "-created-on" -%}<div class="collection-list-wrapper-categoria w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="contenedor-catalogo catalogo w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="contenedor-categoria-piso w-dyn-item">
                   <a href="{{ item.url }}" class="link-block-piso w-inline-block" style="background-image: url('{{item.data.f_foto-principal-de-producto.url}}');"></a>
