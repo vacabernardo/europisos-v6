@@ -97,6 +97,72 @@ collections:
     editor: *ref_0
     folder: cms/pages/fibra-de-vidrio
     fields: *ref_1
+  - name: blog
+    label: Blogs
+    folder: cms/blog
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Contenido
+        name: body
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_imagen
+        label: Imagen
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_introduccion
+        label: Introduccion
+        widget: text
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: blog
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[blog].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_2
   - name: linea
     label: Lineas
     folder: cms/linea
@@ -505,6 +571,10 @@ collections:
             label: Text
             name: '-1dca6e3f'
             widget: string
+          - hint: 'Original text: Revestimientos de madera, key: 4d0038b0'
+            label: Text
+            name: 4d0038b0
+            widget: string
           - hint: 'Original text: Carpintería, key: 75617034'
             label: Text
             name: '75617034'
@@ -521,9 +591,9 @@ collections:
             label: Text
             name: '-70c0b1fd'
             widget: string
-          - hint: 'Original text: SERVICIOS, key: -657ae5c3'
+          - hint: 'Original text: MENU, key: 240d5f'
             label: Text
-            name: '-657ae5c3'
+            name: 240d5f
             widget: string
           - hint: >-
               Original text: Tu mejor opción en pérgolas, decks y pisos de
@@ -601,30 +671,10 @@ collections:
             name: 48ff7297
             widget: string
           - hint: >-
-              Original text: Descubre sobre nuestra división en fibra de vidrio,
-              somos fabricantes., key: 5ed87009
+              Original text: Revestimiento de paredes y techos con madera, key:
+              -bd6b076
             label: Text
-            name: 5ed87009
-            widget: string
-          - hint: 'Original text: Carpintería fina, key: 38b37622'
-            label: Text
-            name: 38b37622
-            widget: string
-          - hint: 'Original text: Mobiliario y carpintería, key: -693990d6'
-            label: Text
-            name: '-693990d6'
-            widget: string
-          - hint: >-
-              Original text: Diseño y desarrollo de proyectos de carpintería
-              fina residencial, key: -631640bc
-            label: Text
-            name: '-631640bc'
-            widget: string
-          - hint: >-
-              Original text: Diseño e instalación de muros verdes con follaje
-              sintético., key: -6fcefc00
-            label: Text
-            name: '-6fcefc00'
+            name: '-bd6b076'
             widget: string
           - hint: >-
               Original text: Tu mejor opción en diseño e instalación de
@@ -724,36 +774,6 @@ collections:
             label: Text
             name: e0a23a2
             widget: text
-          - hint: 'Original text: Nuevo Deck de Bambú, key: -3881b36b'
-            label: Text
-            name: '-3881b36b'
-            widget: string
-          - hint: >-
-              Original text: Conoce la nueva tendencia en decks y pisos de
-              exteriores para terrazas y jardines. Es un tipo de suelo hecho a
-              base de fibras naturales de bambú., key: -112ecbdb
-            label: Text
-            name: '-112ecbdb'
-            widget: text
-          - hint: 'Original text: División de decks, key: -2df0ddfe'
-            label: Text
-            name: '-2df0ddfe'
-            widget: string
-          - hint: 'Original text: Muros verdes con follaje sintético, key: -48d59d5c'
-            label: Text
-            name: '-48d59d5c'
-            widget: string
-          - hint: >-
-              Original text: Embellece cualquier pared con un follaje sintético.
-              Son ideales para cubrir fachadas o paredes para dar un toque
-              natural sin preocuparte por su mantenimiento., key: -1553c5fd
-            label: Text
-            name: '-1553c5fd'
-            widget: text
-          - hint: 'Original text: Divisón muros verdes, key: -742411d5'
-            label: Text
-            name: '-742411d5'
-            widget: string
           - hint: >-
               Original text: Revestimiento y vigas de madera natural y
               sintética, key: -25002216
@@ -767,10 +787,6 @@ collections:
             label: Text
             name: 6986c29f
             widget: text
-          - hint: 'Original text: Revestimientos de madera, key: 4d0038b0'
-            label: Text
-            name: 4d0038b0
-            widget: string
           - hint: "Original text: VER\_GALERÍA fotográfica, key: 6b986429"
             label: Text
             name: 6b986429
@@ -809,6 +825,10 @@ collections:
           - hint: 'Original text: Carpintería residencial, key: 68fb3ac9'
             label: Text
             name: 68fb3ac9
+            widget: string
+          - hint: 'Original text: Muros verdes con follaje sintético, key: -48d59d5c'
+            label: Text
+            name: '-48d59d5c'
             widget: string
           - hint: 'Original text: Portafolio, key: -797026b7'
             label: Text
@@ -868,6 +888,122 @@ collections:
             label: Text
             name: 3c56e317
             widget: string
+          - hint: >-
+              Original text: Por favor llena la siguiente información sobre tu
+              proyecto y tus necesidades, key: 4c499292
+            label: Text
+            name: 4c499292
+            widget: string
+          - hint: 'Original text: Nombre *, key: 5609e9b3'
+            label: Text
+            name: 5609e9b3
+            widget: string
+          - hint: 'Original text: Correo electrónico *, key: 6a025917'
+            label: Text
+            name: 6a025917
+            widget: string
+          - hint: "Original text: Celular de contacto \_*, key: 5dcc7d8a"
+            label: Text
+            name: 5dcc7d8a
+            widget: string
+          - hint: >-
+              Original text: A fin de ofrecerte un mejor servicio, te pedimos
+              que ofrezcas más información sobre tu proyecto, key: -4591a97
+            label: Text
+            name: '-4591a97'
+            widget: text
+          - hint: 'Original text: Servicio de interés *, key: -3d3ece5'
+            label: Text
+            name: '-3d3ece5'
+            widget: string
+          - hint: 'Original text: Piso de madera, key: 39113658'
+            label: Text
+            name: '39113658'
+            widget: string
+          - hint: 'Original text: Pergolado, key: -6a2e4f1b'
+            label: Text
+            name: '-6a2e4f1b'
+            widget: string
+          - hint: 'Original text: Second Choice, key: 3c4172cd'
+            label: Text
+            name: 3c4172cd
+            widget: string
+          - hint: 'Original text: Deck, key: 2070c9'
+            label: Text
+            name: 2070c9
+            widget: string
+          - hint: 'Original text: Sauna, key: 4bf7bba'
+            label: Text
+            name: 4bf7bba
+            widget: string
+          - hint: 'Original text: Muro verde, key: -533f0677'
+            label: Text
+            name: '-533f0677'
+            widget: string
+          - hint: 'Original text: Otro, key: 25ab02'
+            label: Text
+            name: 25ab02
+            widget: string
+          - hint: >-
+              Original text: Superficie aproximada a cubrir en metros cuadrados,
+              key: -3ada762e
+            label: Text
+            name: '-3ada762e'
+            widget: string
+          - hint: 'Original text: Ciudad, key: 78530878'
+            label: Text
+            name: '78530878'
+            widget: string
+          - hint: 'Original text: Código postal, key: 29c3690e'
+            label: Text
+            name: 29c3690e
+            widget: string
+          - hint: 'Original text: Mensaje ó comentarios, key: -15f69c'
+            label: Text
+            name: '-15f69c'
+            widget: string
+          - hint: 'Original text: Muchas gracias, key: -6065ad13'
+            label: Text
+            name: '-6065ad13'
+            widget: string
+          - hint: >-
+              Original text: Oops! Something went wrong while submitting the
+              form., key: -7c112e99
+            label: Text
+            name: '-7c112e99'
+            widget: string
+          - hint: >-
+              Original text: Cotizamos tu proyecto sin ningún compromiso, key:
+              126b3161
+            label: Text
+            name: 126b3161
+            widget: string
+          - hint: 'Original text: Teléfono: , key: 5401eebe'
+            label: Text
+            name: 5401eebe
+            widget: string
+          - hint: 'Original text: 33 3901 8920, key: -59735f28'
+            label: Text
+            name: '-59735f28'
+            widget: string
+          - hint: 'Original text: Oficinas generales:, key: -79ad9a64'
+            label: Text
+            name: '-79ad9a64'
+            widget: string
+          - hint: "Original text: ATENDEMOS\_SOLO\_BAJO\_CITA, key: -1a6199e6"
+            label: Text
+            name: '-1a6199e6'
+            widget: string
+          - hint: 'Original text: Favor de agendar su cita al WhatsApp:, key: 8eedd9'
+            label: Text
+            name: 8eedd9
+            widget: string
+          - hint: >-
+              Original text: Plaza Terranova: Av. Manuel Acuña 2929 Local E-2,
+              Terranova, 44689 Guadalajara, Jalisco, México., key: -ed7a307
+            label: Text
+            name: '-ed7a307'
+            widget: text
           - hint: 'Original text: Productos, key: 38c07af3'
             label: Text
             name: 38c07af3
@@ -912,14 +1048,6 @@ collections:
             label: Text
             name: 43e0c95d
             widget: text
-          - hint: 'Original text: Teléfono: , key: 5401eebe'
-            label: Text
-            name: 5401eebe
-            widget: string
-          - hint: 'Original text: 33 3901 8920, key: -59735f28'
-            label: Text
-            name: '-59735f28'
-            widget: string
           - hint: 'Original text: Formulario de contacto, key: 46d7d800'
             label: Text
             name: 46d7d800
@@ -1043,112 +1171,6 @@ collections:
             label: Text
             name: '-1465f815'
             widget: string
-          - hint: >-
-              Original text: Por favor llena la siguiente información sobre tu
-              proyecto y tus necesidades, key: 4c499292
-            label: Text
-            name: 4c499292
-            widget: string
-          - hint: 'Original text: Nombre *, key: 5609e9b3'
-            label: Text
-            name: 5609e9b3
-            widget: string
-          - hint: 'Original text: Correo electrónico *, key: 6a025917'
-            label: Text
-            name: 6a025917
-            widget: string
-          - hint: "Original text: Celular de contacto \_*, key: 5dcc7d8a"
-            label: Text
-            name: 5dcc7d8a
-            widget: string
-          - hint: >-
-              Original text: A fin de ofrecerte un mejor servicio, te pedimos
-              que ofrezcas más información sobre tu proyecto, key: -4591a97
-            label: Text
-            name: '-4591a97'
-            widget: text
-          - hint: 'Original text: Servicio de interés *, key: -3d3ece5'
-            label: Text
-            name: '-3d3ece5'
-            widget: string
-          - hint: 'Original text: Piso de madera, key: 39113658'
-            label: Text
-            name: '39113658'
-            widget: string
-          - hint: 'Original text: Pergolado, key: -6a2e4f1b'
-            label: Text
-            name: '-6a2e4f1b'
-            widget: string
-          - hint: 'Original text: Second Choice, key: 3c4172cd'
-            label: Text
-            name: 3c4172cd
-            widget: string
-          - hint: 'Original text: Deck, key: 2070c9'
-            label: Text
-            name: 2070c9
-            widget: string
-          - hint: 'Original text: Sauna, key: 4bf7bba'
-            label: Text
-            name: 4bf7bba
-            widget: string
-          - hint: 'Original text: Muro verde, key: -533f0677'
-            label: Text
-            name: '-533f0677'
-            widget: string
-          - hint: 'Original text: Otro, key: 25ab02'
-            label: Text
-            name: 25ab02
-            widget: string
-          - hint: >-
-              Original text: Superficie aproximada a cubrir en metros cuadrados,
-              key: -3ada762e
-            label: Text
-            name: '-3ada762e'
-            widget: string
-          - hint: 'Original text: Ciudad, key: 78530878'
-            label: Text
-            name: '78530878'
-            widget: string
-          - hint: 'Original text: Código postal, key: 29c3690e'
-            label: Text
-            name: 29c3690e
-            widget: string
-          - hint: 'Original text: Mensaje ó comentarios, key: -15f69c'
-            label: Text
-            name: '-15f69c'
-            widget: string
-          - hint: 'Original text: Muchas gracias, key: -6065ad13'
-            label: Text
-            name: '-6065ad13'
-            widget: string
-          - hint: >-
-              Original text: Oops! Something went wrong while submitting the
-              form., key: -7c112e99
-            label: Text
-            name: '-7c112e99'
-            widget: string
-          - hint: >-
-              Original text: Cotizamos tu proyecto sin ningún compromiso, key:
-              126b3161
-            label: Text
-            name: 126b3161
-            widget: string
-          - hint: 'Original text: Oficinas generales:, key: -79ad9a64'
-            label: Text
-            name: '-79ad9a64'
-            widget: string
-          - hint: >-
-              Original text: Horario de lunes a viernes de 10:30am a 5:00pm.
-              Sábados de 10:30am a 1:30pm. Domingos: cerrado., key: 464bfa1b
-            label: Text
-            name: 464bfa1b
-            widget: text
-          - hint: >-
-              Original text: Plaza Terranova: Av. Manuel Acuña 2929 Local E-2,
-              Terranova, 44689 Guadalajara, Jalisco, México., key: -ed7a307
-            label: Text
-            name: '-ed7a307'
-            widget: text
           - hint: >-
               Original text: Solicita una asesoría y cotización para tu
               siguiente proyecto en fibra de vidrio., key: -6a311f37
@@ -1437,41 +1459,6 @@ collections:
             label: Text
             name: 185379ae
             widget: string
-          - hint: 'Original text: Todos, key: 4d3b0cd'
-            label: Text
-            name: 4d3b0cd
-            widget: string
-          - hint: 'Original text: Básico, key: 7d385ea1'
-            label: Text
-            name: 7d385ea1
-            widget: string
-          - hint: 'Original text: Estandar, key: -7165b55e'
-            label: Text
-            name: '-7165b55e'
-            widget: string
-          - hint: 'Original text: Premium, key: 503d6637'
-            label: Text
-            name: 503d6637
-            widget: string
-          - hint: >-
-              Original text: Fabricamos cualquier tipo de estructura en fibra de
-              vidrio. No importa el tamaño, color o características de la
-              pieza., key: -6503cab5
-            label: Text
-            name: '-6503cab5'
-            widget: text
-          - hint: 'Original text:  Nos adaptamos a tus necesidades., key: -1522c8cf'
-            label: Text
-            name: '-1522c8cf'
-            widget: string
-          - hint: >-
-              Original text: Contamos con la más alta experiencia en la
-              fabricación de piezas únicas. Hemos realizado proyectos de gran
-              exigencia técnica y conceptual. Ponte en contacto con nosotros y
-              te asesoramos en tu próximo proyecto., key: -70e87127
-            label: Text
-            name: '-70e87127'
-            widget: text
           - hint: 'Original text: Línea:, key: -7110666f'
             label: Text
             name: '-7110666f'
@@ -1526,6 +1513,25 @@ collections:
             label: Text
             name: 3d503d2b
             widget: string
+          - hint: >-
+              Original text: Fabricamos cualquier tipo de estructura en fibra de
+              vidrio. No importa el tamaño, color o características de la
+              pieza., key: -6503cab5
+            label: Text
+            name: '-6503cab5'
+            widget: text
+          - hint: 'Original text:  Nos adaptamos a tus necesidades., key: -1522c8cf'
+            label: Text
+            name: '-1522c8cf'
+            widget: string
+          - hint: >-
+              Original text: Contamos con la más alta experiencia en la
+              fabricación de piezas únicas. Hemos realizado proyectos de gran
+              exigencia técnica y conceptual. Ponte en contacto con nosotros y
+              te asesoramos en tu próximo proyecto., key: -70e87127
+            label: Text
+            name: '-70e87127'
+            widget: text
           - hint: 'Original text: Galería de proyectos, key: 2191c5fc'
             label: Text
             name: 2191c5fc
@@ -1742,30 +1748,6 @@ collections:
             name: '-1a9618d4'
             widget: text
           - hint: >-
-              Original text: Contamos con un amplio catálogo en sillas y
-              elementos decorativos de alta resistencia., key: -e00db8f
-            label: Text
-            name: '-e00db8f'
-            widget: string
-          - hint: >-
-              Original text: Somos fabricantes de cualquier diseño en fibra de
-              vidrio y también somos distribuidores de las más prestigiadas
-              marcas en mobiliario., key: -1a2b8e56
-            label: Text
-            name: '-1a2b8e56'
-            widget: text
-          - hint: 'Original text: Amplio surtido de mobiliario, key: 5dc13b7a'
-            label: Text
-            name: 5dc13b7a
-            widget: string
-          - hint: >-
-              Original text: Contamos con un amplio surtido en muebles para
-              diferentes tipos de proyectos y necesidades. Ponte en contacto con
-              nosotros para enviarte nuestro catálogo., key: -1f64f7d6
-            label: Text
-            name: '-1f64f7d6'
-            widget: text
-          - hint: >-
               Original text: Marcas para Pérgolas, Decks, Pisos de madera,
               Saunas, Carpintería, key: 3adae108
             label: Text
@@ -1782,17 +1764,6 @@ collections:
               -1a80352a
             label: Text
             name: '-1a80352a'
-            widget: string
-          - hint: >-
-              Original text: Somos distribuidores de las mejores marcas y
-              materiales en follaje sintético para muros verdes, ponte en
-              contacto para ayudarte a resolver cualquier duda., key: 3475242a
-            label: Text
-            name: 3475242a
-            widget: text
-          - hint: 'Original text: +52 (33) 3901 8920, key: -5a09ff0f'
-            label: Text
-            name: '-5a09ff0f'
             widget: string
           - hint: 'Original text: Mobiliario y carpintería fina, key: 688560ec'
             label: Text
@@ -1821,6 +1792,48 @@ collections:
           - hint: 'Original text: Solicitar cotización >, key: 2e35f721'
             label: Text
             name: 2e35f721
+            widget: string
+          - hint: >-
+              Original text: Contamos con un amplio catálogo en sillas y
+              elementos decorativos de alta resistencia., key: -e00db8f
+            label: Text
+            name: '-e00db8f'
+            widget: string
+          - hint: >-
+              Original text: Somos fabricantes de cualquier diseño en fibra de
+              vidrio y también somos distribuidores de las más prestigiadas
+              marcas en mobiliario., key: -1a2b8e56
+            label: Text
+            name: '-1a2b8e56'
+            widget: text
+          - hint: 'Original text: Amplio surtido de mobiliario, key: 5dc13b7a'
+            label: Text
+            name: 5dc13b7a
+            widget: string
+          - hint: >-
+              Original text: Contamos con un amplio surtido en muebles para
+              diferentes tipos de proyectos y necesidades. Ponte en contacto con
+              nosotros para enviarte nuestro catálogo., key: -1f64f7d6
+            label: Text
+            name: '-1f64f7d6'
+            widget: text
+          - hint: >-
+              Original text: Embellece cualquier pared con un follaje sintético.
+              Son ideales para cubrir fachadas o paredes para dar un toque
+              natural sin preocuparte por su mantenimiento., key: -1553c5fd
+            label: Text
+            name: '-1553c5fd'
+            widget: text
+          - hint: >-
+              Original text: Somos distribuidores de las mejores marcas y
+              materiales en follaje sintético para muros verdes, ponte en
+              contacto para ayudarte a resolver cualquier duda., key: 3475242a
+            label: Text
+            name: 3475242a
+            widget: text
+          - hint: 'Original text: +52 (33) 3901 8920, key: -5a09ff0f'
+            label: Text
+            name: '-5a09ff0f'
             widget: string
           - hint: >-
               Original text: Pérgolas de madera, fibra de vidrio y metal, key:
@@ -2193,6 +2206,33 @@ collections:
             label: Text
             name: 6b120e77
             widget: string
+          - hint: >-
+              Original text: Venta, instalación y mantenimiento de pisos de
+              madera de la más alta calidad, key: 48cfebbf
+            label: Text
+            name: 48cfebbf
+            widget: string
+          - hint: >-
+              Original text: Somos distribuidores de las más reconocidas marcas
+              Americanas y Europeas de pisos de madera, decks sintéticos y
+              madera solida., key: 4a251b8b
+            label: Text
+            name: 4a251b8b
+            widget: text
+          - hint: 'Original text: Decks de madera para exterior, key: -6f5be135'
+            label: Text
+            name: '-6f5be135'
+            widget: string
+          - hint: >-
+              Original text: ¿Buscas un deck o piso para exterior?, key:
+              3d64bebf
+            label: Text
+            name: 3d64bebf
+            widget: string
+          - hint: 'Original text: Deck sintético, key: -64ea79a9'
+            label: Text
+            name: '-64ea79a9'
+            widget: string
           - hint: 'Original text: Portafolio de proyectos, key: 3f6800a6'
             label: Text
             name: 3f6800a6
@@ -2261,31 +2301,106 @@ collections:
             name: '-6036b884'
             widget: string
           - hint: >-
-              Original text: Venta, instalación y mantenimiento de pisos de
-              madera de la más alta calidad, key: 48cfebbf
+              Original text: Producción, instalación y mantenimiento de piezas
+              de fibra de vidrio para la construcción y decoración, residencial,
+              hotelera y de servicios. Diseños a la medida., key: 14ead907
             label: Text
-            name: 48cfebbf
-            widget: string
-          - hint: >-
-              Original text: Somos distribuidores de las más reconocidas marcas
-              Americanas y Europeas de pisos de madera, decks sintéticos y
-              madera solida., key: 4a251b8b
-            label: Text
-            name: 4a251b8b
+            name: 14ead907
             widget: text
-          - hint: 'Original text: Decks de madera para exterior, key: -6f5be135'
+          - hint: >-
+              Original text: Ofrecemos los mejores precios del mercado., key:
+              7231e7bb
             label: Text
-            name: '-6f5be135'
+            name: 7231e7bb
+            widget: string
+          - hint: 'Original text: Garantía de calidad., key: 617cac04'
+            label: Text
+            name: 617cac04
+            widget: string
+          - hint: 'Original text: Productos y servicios >, key: 3fd8b3a7'
+            label: Text
+            name: 3fd8b3a7
             widget: string
           - hint: >-
-              Original text: ¿Buscas un deck o piso para exterior?, key:
-              3d64bebf
+              Original text: Durabilidad, resistencia, ligereza y economía, key:
+              -5f600124
             label: Text
-            name: 3d64bebf
+            name: '-5f600124'
             widget: string
-          - hint: 'Original text: Deck sintético, key: -64ea79a9'
+          - hint: >-
+              Original text: Los productos fabricados en fibra de vidrio y
+              resinas son muy solicitados por su durabilidad en ambientes
+              agresivos, por su bajo mantenimiento y estética., key: -61050693
             label: Text
-            name: '-64ea79a9'
+            name: '-61050693'
+            widget: text
+          - hint: >-
+              Original text: Nuestros diseños innovadores crean espacios únicos.
+              La fibra de vidrio es un excelente material para proyectos
+              arquitectónicos., key: -740f8bc4
+            label: Text
+            name: '-740f8bc4'
+            widget: text
+          - hint: >-
+              Original text: Manufacturamos estructuras especiales, diseños
+              únicos como esculturas y piezas para ambientan espacios., key:
+              194ac239
+            label: Text
+            name: 194ac239
+            widget: text
+          - hint: >-
+              Original text: Realizamos todo tipo de piezas únicas con fibra de
+              vidrio. Somos fabricantes y podemos hacer cualquier diseño a la
+              medida., key: 5d63d212
+            label: Text
+            name: 5d63d212
+            widget: text
+          - hint: >-
+              Original text: Contamos con un amplio catálogo en sillas, bancas y
+              elementos decorativos para espacios al aire libre que requieren
+              durabilidad y poco mantenimiento., key: 95ba8ab
+            label: Text
+            name: 95ba8ab
+            widget: text
+          - hint: 'Original text: Solicitar informes, key: 29102491'
+            label: Text
+            name: '29102491'
+            widget: string
+          - hint: >-
+              Original text: Diseño y construcción de Saunas de Madera, key:
+              -73674275
+            label: Text
+            name: '-73674275'
+            widget: string
+          - hint: >-
+              Original text: En Europisos diseñamos e instalamos baños sauna
+              para proyectos residenciales y comerciales. Utilizamos maderas
+              finas de alta durabilidad y resistentes al agua., key: -3247818b
+            label: Text
+            name: '-3247818b'
+            widget: text
+          - hint: 'Original text: Construcción de Saunas de madera, key: -6c28f7a7'
+            label: Text
+            name: '-6c28f7a7'
+            widget: string
+          - hint: >-
+              Original text: Los saunas son una valiosa inversión, por eso en
+              Europisos te ofrecemos un servicio profesional de instalación y
+              mantenimiento, a fin de que siempre cuentes con un baño elegante y
+              funcional., key: -4d57dab2
+            label: Text
+            name: '-4d57dab2'
+            widget: text
+          - hint: >-
+              Original text: Te orientamos en cuestión de diseño y elección de
+              materiales y construcción para un proyecto de sauna., key:
+              524692bc
+            label: Text
+            name: 524692bc
+            widget: text
+          - hint: 'Original text: MARCA, key: 45bda1c'
+            label: Text
+            name: 45bda1c
             widget: string
           - hint: 'Original text: Techos y cubiertas para pérgolas, key: -4e95ba90'
             label: Text
@@ -2615,108 +2730,6 @@ collections:
             label: Text
             name: '745648e1'
             widget: string
-          - hint: 'Original text: MARCA, key: 45bda1c'
-            label: Text
-            name: 45bda1c
-            widget: string
-          - hint: >-
-              Original text: Producción, instalación y mantenimiento de piezas
-              de fibra de vidrio para la construcción y decoración, residencial,
-              hotelera y de servicios. Diseños a la medida., key: 14ead907
-            label: Text
-            name: 14ead907
-            widget: text
-          - hint: >-
-              Original text: Ofrecemos los mejores precios del mercado., key:
-              7231e7bb
-            label: Text
-            name: 7231e7bb
-            widget: string
-          - hint: 'Original text: Garantía de calidad., key: 617cac04'
-            label: Text
-            name: 617cac04
-            widget: string
-          - hint: 'Original text: Productos y servicios >, key: 3fd8b3a7'
-            label: Text
-            name: 3fd8b3a7
-            widget: string
-          - hint: >-
-              Original text: Durabilidad, resistencia, ligereza y economía, key:
-              -5f600124
-            label: Text
-            name: '-5f600124'
-            widget: string
-          - hint: >-
-              Original text: Los productos fabricados en fibra de vidrio y
-              resinas son muy solicitados por su durabilidad en ambientes
-              agresivos, por su bajo mantenimiento y estética., key: -61050693
-            label: Text
-            name: '-61050693'
-            widget: text
-          - hint: >-
-              Original text: Nuestros diseños innovadores crean espacios únicos.
-              La fibra de vidrio es un excelente material para proyectos
-              arquitectónicos., key: -740f8bc4
-            label: Text
-            name: '-740f8bc4'
-            widget: text
-          - hint: >-
-              Original text: Manufacturamos estructuras especiales, diseños
-              únicos como esculturas y piezas para ambientan espacios., key:
-              194ac239
-            label: Text
-            name: 194ac239
-            widget: text
-          - hint: >-
-              Original text: Realizamos todo tipo de piezas únicas con fibra de
-              vidrio. Somos fabricantes y podemos hacer cualquier diseño a la
-              medida., key: 5d63d212
-            label: Text
-            name: 5d63d212
-            widget: text
-          - hint: >-
-              Original text: Contamos con un amplio catálogo en sillas, bancas y
-              elementos decorativos para espacios al aire libre que requieren
-              durabilidad y poco mantenimiento., key: 95ba8ab
-            label: Text
-            name: 95ba8ab
-            widget: text
-          - hint: 'Original text: Solicitar informes, key: 29102491'
-            label: Text
-            name: '29102491'
-            widget: string
-          - hint: >-
-              Original text: Diseño y construcción de Saunas de Madera, key:
-              -73674275
-            label: Text
-            name: '-73674275'
-            widget: string
-          - hint: >-
-              Original text: En Europisos diseñamos e instalamos baños sauna
-              para proyectos residenciales y comerciales. Utilizamos maderas
-              finas de alta durabilidad y resistentes al agua., key: -3247818b
-            label: Text
-            name: '-3247818b'
-            widget: text
-          - hint: 'Original text: Construcción de Saunas de madera, key: -6c28f7a7'
-            label: Text
-            name: '-6c28f7a7'
-            widget: string
-          - hint: >-
-              Original text: Los saunas son una valiosa inversión, por eso en
-              Europisos te ofrecemos un servicio profesional de instalación y
-              mantenimiento, a fin de que siempre cuentes con un baño elegante y
-              funcional., key: -4d57dab2
-            label: Text
-            name: '-4d57dab2'
-            widget: text
-          - hint: >-
-              Original text: Te orientamos en cuestión de diseño y elección de
-              materiales y construcción para un proyecto de sauna., key:
-              524692bc
-            label: Text
-            name: 524692bc
-            widget: text
           - hint: "Original text: LINEA\_DE\_PRODUCTO, key: -18e9feb4"
             label: Text
             name: '-18e9feb4'
@@ -2760,6 +2773,34 @@ collections:
               productos y servicios, key: -4d61917c
             label: Text
             name: '-4d61917c'
+            widget: string
+          - hint: 'Original text: Blog, key: 1fa3c2'
+            label: Text
+            name: 1fa3c2
+            widget: string
+          - hint: 'Original text: Compártelo, key: 1eede2d4'
+            label: Text
+            name: 1eede2d4
+            widget: string
+          - hint: 'Original text: Category, key: 6dd211e'
+            label: Text
+            name: 6dd211e
+            widget: string
+          - hint: >-
+              Original text: Encuentra el mejor contenido en tendencias de
+              arquitectura con elementos de madera, key: -41856ad9
+            label: Text
+            name: '-41856ad9'
+            widget: string
+          - hint: >-
+              Original text: Somos líderes en pérgolas, decks, revestimientos y
+              pisos de madera, key: -abb1736
+            label: Text
+            name: '-abb1736'
+            widget: string
+          - hint: 'Original text: Leer artículo, key: -5a81f9c7'
+            label: Text
+            name: '-5a81f9c7'
             widget: string
       - label: Links
         name: links
@@ -2857,10 +2898,6 @@ collections:
             label: Link
             name: '23'
             widget: string
-          - hint: 'Original link: #follaje-sintetico, key: -e8b7f3'
-            label: Link
-            name: '-e8b7f3'
-            widget: string
           - hint: 'Original link: #pergolas, key: 5f1c31dc'
             label: Link
             name: 5f1c31dc
@@ -2892,6 +2929,18 @@ collections:
             name: '-b70c173'
             widget: string
           - hint: >-
+              Original link: https://api.whatsapp.com/send?phone=523339018920,
+              key: 75206762
+            label: Link
+            name: '75206762'
+            widget: string
+          - hint: >-
+              Original link: https://api.whatsapp.com/send?phone=523318753858,
+              key: 7c9fd389
+            label: Link
+            name: 7c9fd389
+            widget: string
+          - hint: >-
               Original link:
               https://www.europisosdemaderaydecks.com/fibra-de-vidrio/productos.html#productos,
               key: 3c7fdf2c
@@ -2912,18 +2961,6 @@ collections:
           - hint: 'Original link: /fibra-de-vidrio/contacto/, key: -6164a4a'
             label: Link
             name: '-6164a4a'
-            widget: string
-          - hint: >-
-              Original link: https://api.whatsapp.com/send?phone=523339018920,
-              key: 75206762
-            label: Link
-            name: '75206762'
-            widget: string
-          - hint: >-
-              Original link: https://api.whatsapp.com/send?phone=523318753858,
-              key: 7c9fd389
-            label: Link
-            name: 7c9fd389
             widget: string
           - hint: 'Original link: /fibra-de-vidrio/arquitectura/, key: 293566d7'
             label: Link
@@ -3066,19 +3103,6 @@ collections:
                 required: false
           - label: Image
             name: i5547a96b
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 322d96af
             widget: object
             fields:
               - name: url
@@ -3689,32 +3713,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: i3089871
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: i2fa80f0
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: 4e9a181d
             widget: object
             fields:
@@ -3910,6 +3908,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: 322d96af
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: 5794294a
             widget: object
             fields:
@@ -4092,45 +4103,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-7d82f881'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 7e23c5cf
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-773adbaf'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: '-624be1d7'
             widget: object
             fields:
@@ -4171,19 +4143,6 @@ collections:
                 required: false
           - label: Image
             name: '-3f932de'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 3bcfc85e
             widget: object
             fields:
               - name: url
@@ -4314,6 +4273,19 @@ collections:
                 required: false
           - label: Image
             name: '-535eb38'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 3bcfc85e
             widget: object
             fields:
               - name: url
@@ -4521,6 +4493,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: '0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: '-55c025a5'
             widget: object
             fields:
@@ -4664,19 +4649,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-21818a00'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: 13c4cbba
             widget: object
             fields:
@@ -4782,6 +4754,32 @@ collections:
                 required: false
           - label: Image
             name: 7df97f4c
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 7e23c5cf
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-21818a00'
             widget: object
             fields:
               - name: url
@@ -4950,6 +4948,58 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: 3cfaef50
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 3d171e52
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 3d0906d1
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 3d2535d3
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: '-4958f2aa'
             widget: object
             fields:
@@ -5041,7 +5091,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 3cfaef50
+            name: 378b6870
             widget: object
             fields:
               - name: url
@@ -5054,7 +5104,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 3d171e52
+            name: 63ae51bc
             widget: object
             fields:
               - name: url
@@ -5067,7 +5117,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 3d0906d1
+            name: 43da7cbe
             widget: object
             fields:
               - name: url
@@ -5080,7 +5130,33 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 3d2535d3
+            name: 523fda84
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 39a272c1
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7d00f4c1'
             widget: object
             fields:
               - name: url
