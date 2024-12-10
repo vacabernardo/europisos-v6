@@ -35,6 +35,51 @@ function htmlEntities(str) {
 
 module.exports = function (eleventyConfig) {
 
+    eleventyConfig.addShortcode('embedVideoJSON', async function(video) {
+        if (!video || !video.url) {
+            return ""
+        }
+        
+        let oembedUrl = null;
+        if (video.url.includes("vimeo")) {
+            oembedUrl = "https://vimeo.com/api/oembed.json?url=" + video.url;
+            
+        } else if (video.url.includes("you")) {
+          oembedUrl = `https://youtube.com/oembed?url=${video.url}&format=json`;
+        }
+
+        if (oembedUrl != null) {
+            try {
+                const response = await fetch(oembedUrl);
+                const oembedRes = await response.json();
+                if (oembedRes.html) {
+                    return JSON.stringify({
+                        "items": [
+                            {
+                                "type": "video",
+                                "url": video.url,
+                                "html": oembedRes.html,
+                                "width": 900,
+                                "height": 480
+                            }
+                        ],
+                        "group": ""
+                    })
+                } else {
+                    return JSON.stringify({
+                        "items": []
+                    })
+                }
+                
+            } catch (error) {
+                console.error("Error fetching oEmbed response: ", error);
+                return "";
+            }
+        }
+
+        return "";
+    });
+
     eleventyConfig.addShortcode('embedVideo', async function(video) {
         if (!video || !video.url) {
             return ""
@@ -160,11 +205,13 @@ module.exports = function (eleventyConfig) {
                     break;
                 case "twitter:image":
                         let content = htmlEntities(seo[key]);
+                        if (!content.startsWith("http")) {
                             if (content.startsWith("/")) {
                                 content = domain + content;
                             } else {
                                 content = domain + "/" + content;
                             }
+                        }
                             seoString += `<meta name="${escape(key)}" content="${content}">`;
                 break;
                 default: {
@@ -174,11 +221,14 @@ module.exports = function (eleventyConfig) {
                     
                         let content = htmlEntities(seo[key]);
                         if (key == "og:image") {
-                            if (content.startsWith("/")) {
-                                content = domain + content;
-                            } else {
-                                content = domain + "/" + content;
+                            if (!content.startsWith("http")) {
+                                if (content.startsWith("/")) {
+                                    content = domain + content;
+                                } else {
+                                    content = domain + "/" + content;
+                                }
                             }
+                          
                         }
                         seoString += `<meta property="${escape(key)}" content="${content}">`;
                     } else {

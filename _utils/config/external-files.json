@@ -1,11 +1,14 @@
 {
-  "https://uploads-ssl.webflow.com/609b09e44168f36853114caa/609b09e44168f3abcc114cb4_602203128adb2d8d7f8c6478_1501218533_image.jpg": "theme/assets/external/609b09e44168f3abcc114cb4_602203128adb2d8d7f8c6478_1501218533_image.jpg",
-  "https://uploads-ssl.webflow.com/609b09e44168f36853114caa/609b09e44168f381af114cb3_602207ed3ad5a7ce8e5eed73_deck-bambu-mexico.jpg": "theme/assets/external/609b09e44168f381af114cb3_602207ed3ad5a7ce8e5eed73_deck-bambu-mexico.jpg",
-  "https://uploads-ssl.webflow.com/609b09e44168f36853114caa/61ae4c8e0933c5a60d8ed8cd_thumbnail-deck-teka.jpg": "theme/assets/external/61ae4c8e0933c5a60d8ed8cd_thumbnail-deck-teka.jpg",
-  "https://uploads-ssl.webflow.com/609b09e44168f36853114caa/609b09e44168f322b4114cb1_602207ac35d4e2a25bb1169c_deck-sintetico-thumbnail.jpg": "theme/assets/external/609b09e44168f322b4114cb1_602207ac35d4e2a25bb1169c_deck-sintetico-thumbnail.jpg",
-  "https://uploads-ssl.webflow.com/609b09e44168f36853114caa/609b09e44168f32c7b114cb0_602207855b8d87e16a49f3be_thumbnail-sintetico.jpg": "theme/assets/external/609b09e44168f32c7b114cb0_602207855b8d87e16a49f3be_thumbnail-sintetico.jpg",
-  "https://uploads-ssl.webflow.com/609b09e44168f36853114caa/609b09e44168f324a3114caf_6022076400a40300ad07f753_thumbnail-laminado.jpg": "theme/assets/external/609b09e44168f324a3114caf_6022076400a40300ad07f753_thumbnail-laminado.jpg",
-  "https://uploads-ssl.webflow.com/609b09e44168f36853114caa/609b09e44168f313a6114cae_602203128adb2d42288c64a3_thumbnail-ingenieria.jpg": "theme/assets/external/609b09e44168f313a6114cae_602203128adb2d42288c64a3_thumbnail-ingenieria.jpg",
+  "https://cdn.prod.website-files.com/609b09e44168f36853114caa/67586cd3964897f0d2bc8393_deck-sintetico.webp": "theme/assets/external/67586cd3964897f0d2bc8393_deck-sintetico.webp",
+  "https://cdn.prod.website-files.com/609b09e44168f36853114caa/609b09e44168f3abcc114cb4_602203128adb2d8d7f8c6478_1501218533_image.jpg": "theme/assets/external/609b09e44168f3abcc114cb4_602203128adb2d8d7f8c6478_1501218533_image.jpg",
+  "https://cdn.prod.website-files.com/609b09e44168f36853114caa/609b09e44168f381af114cb3_602207ed3ad5a7ce8e5eed73_deck-bambu-mexico.jpg": "theme/assets/external/609b09e44168f381af114cb3_602207ed3ad5a7ce8e5eed73_deck-bambu-mexico.jpg",
+  "https://cdn.prod.website-files.com/609b09e44168f36853114caa/61ae4c8e0933c5a60d8ed8cd_thumbnail-deck-teka.jpg": "theme/assets/external/61ae4c8e0933c5a60d8ed8cd_thumbnail-deck-teka.jpg",
+  "https://cdn.prod.website-files.com/609b09e44168f36853114caa/609b09e44168f322b4114cb1_602207ac35d4e2a25bb1169c_deck-sintetico-thumbnail.jpg": "theme/assets/external/609b09e44168f322b4114cb1_602207ac35d4e2a25bb1169c_deck-sintetico-thumbnail.jpg",
+  "https://cdn.prod.website-files.com/609b09e44168f36853114caa/609b09e44168f32c7b114cb0_602207855b8d87e16a49f3be_thumbnail-sintetico.jpg": "theme/assets/external/609b09e44168f32c7b114cb0_602207855b8d87e16a49f3be_thumbnail-sintetico.jpg",
+  "https://cdn.prod.website-files.com/609b09e44168f36853114caa/609b09e44168f324a3114caf_6022076400a40300ad07f753_thumbnail-laminado.jpg": "theme/assets/external/609b09e44168f324a3114caf_6022076400a40300ad07f753_thumbnail-laminado.jpg",
+  "https://cdn.prod.website-files.com/609b09e44168f36853114caa/609b09e44168f313a6114cae_602203128adb2d42288c64a3_thumbnail-ingenieria.jpg": "theme/assets/external/609b09e44168f313a6114cae_602203128adb2d42288c64a3_thumbnail-ingenieria.jpg",
   "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js": "theme/assets/external/jquery-3.5.1.min.dc5e7f18c8.js",
-  "https://d3e54v103j8qbb.cloudfront.net/static/page-not-found.211a85e40c.svg": "theme/assets/external/page-not-found.211a85e40c.svg"
+  "https://d3e54v103j8qbb.cloudfront.net/static/page-not-found.211a85e40c.svg": "theme/assets/external/page-not-found.211a85e40c.svg",
+  "https://cdn.prod.website-files.com/66e1b0d4535b2cae48d58f4a/66e324e2b89186195691bcd0_link-icon.svg": "theme/assets/external/66e324e2b89186195691bcd0_link-icon.svg",
+  "https://cdn.prod.website-files.com/66ec87c66e18e43a6592bf39/66ec87c66e18e43a6592bf78_placeholder-image.svg": "theme/assets/external/66ec87c66e18e43a6592bf78_placeholder-image.svg"
 }
