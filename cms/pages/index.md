@@ -2,34 +2,28 @@
 title: Inicio
 permalink: index.html
 layout: index.html
-slug: ''
+slug: ""
 tags: pages
+date: 2024-12-11T03:32:50.741Z
 seo:
   noindex: false
-  title: >-
-    Europisos | Pérgolas, Decks, Pisos de madera, Fibra de Vidrio, Saunas y
+  title: Europisos | Pérgolas, Decks, Pisos de madera, Fibra de Vidrio, Saunas y
     Carpintería residencial
-  description: >-
-    Europisos: Somos una empresa mexicana dedicada a la importación, instalación
-    y fabricación de pisos de madera, decks para exteriores, pérgolas, fibra de
-    vidrio y proyectos en carpintería residencial
-  og:title: >-
-    Europisos | Pérgolas, Decks, Pisos de madera, Fibra de Vidrio, Saunas y
-    Carpintería residencial
-  additional_tags: >-
-    <meta content="Europisos: Somos una empresa mexicana dedicada a la
-    importación, instalación y fabricación de pisos de madera, decks para
+  description: "Europisos: Somos una empresa mexicana dedicada a la importación,
+    instalación y fabricación de pisos de madera, decks para exteriores,
+    pérgolas, fibra de vidrio y proyectos en carpintería residencial"
+  og:title: Europisos | Pérgolas, Decks, Pisos de madera, Fibra de Vidrio, Saunas
+    y Carpintería residencial
+  additional_tags: '<meta content="Europisos: Somos una empresa mexicana dedicada
+    a la importación, instalación y fabricación de pisos de madera, decks para
     exteriores, pérgolas, fibra de vidrio y proyectos en carpintería
     residencial" property="og:description"><meta content="Europisos: Somos una
     empresa mexicana dedicada a la importación, instalación y fabricación de
     pisos de madera, decks para exteriores, pérgolas, fibra de vidrio y
     proyectos en carpintería residencial" property="twitter:description"><meta
     content="https://europisosdemaderaydecks.com/opengraph/ogg.jpg"
-    property="twitter:image"><meta property="og:type" content="website">
+    property="twitter:image"><meta property="og:type" content="website">'
   og:image: https://europisosdemaderaydecks.com/opengraph/ogg.jpg
-  twitter:title: >-
-    Europisos | Pérgolas, Decks, Pisos de madera, Fibra de Vidrio, Saunas y
-    Carpintería residencial
+  twitter:title: Europisos | Pérgolas, Decks, Pisos de madera, Fibra de Vidrio,
+    Saunas y Carpintería residencial
 ---
-
-
